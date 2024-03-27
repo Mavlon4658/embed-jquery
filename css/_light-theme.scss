@@ -1,0 +1,443 @@
+body.light-theme {
+    background: #F7F7F7;
+    color: #1E1E1E;
+
+    .main {
+        &_input {
+            background: #FFF;
+            color: #1E1E1E;
+    
+            &::placeholder {
+                color: #9A9A9A;
+            }
+        }
+    
+        &_checkbox {
+            input {
+                &::before {
+                    background: #A5A5A5;
+                    border: 1px solid #919191;
+                }
+    
+                &::after {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    
+
+    .btn {
+        &_red {
+            border: 0;
+            box-shadow: none;
+            color: #fff;
+            background: linear-gradient(to right, #3C7EE0, #21457A);
+            
+            &:hover {
+                color: #FFF;
+            }
+        }
+    
+        &_danger {
+            border: 0;
+            box-shadow: none;
+            color: #fff;
+            background: linear-gradient(to right, #3C7EE0, #21457A);
+            
+            &:hover {
+                color: #FFF;
+            }
+        }
+    
+        &_white {
+            border-color: #3C7EE0;
+            color: #3C7EE0;
+        }
+    }
+
+    // Header 
+    .header {
+        &__logo {
+            img {
+                display: block;
+
+                &:nth-child(1) {
+                    display: none;
+                }
+            }
+
+            &_text {
+                span {
+                    color: #3C7EE0;
+                }
+            }
+        }
+
+        &__auth_link {
+            a {
+                color: #3C7EE0;
+                text-decoration: underline;
+            }
+        }
+
+        .btn_red {
+            width: 164px;
+            gap: 8px;
+
+            svg {
+                transition: .3s ease all;
+            }
+
+            &.active {
+                svg {
+                    transform: rotateZ(180deg);
+                }
+            }
+        }
+
+        .change_theme {
+            position: relative;
+
+            button {
+                svg {
+                    path {
+                        stroke: #FFF;
+                    }
+                }
+            }
+
+            ul {
+                button {
+                    color: #1e1e1e;
+
+                    &.active {
+                        color: #3C7EE0;
+                    }
+                }
+            }
+        }
+    }
+    // Header  end
+
+    // Hoem
+    .home {
+        &__bg {
+            display: none;
+
+            &_circle {
+                display: none;
+            }
+        }
+
+        &__title {
+            .light {
+                color: #3C7EE0;
+            }
+
+            .dark {
+                color: inherit;
+            }
+        }
+
+        &__left_card {
+            left: -57px;
+            top: 169px;
+            display: none;
+
+            &.light {
+                display: block;
+            }
+        }
+
+        &__right_card {
+            top: 175px;
+            right: -100px;
+            display: none;
+
+            &.light {
+                display: block;
+            }
+        }
+    }
+    // Hoem end 
+
+    // Interactive Lessons
+    .interactive {
+        &__block {
+            background: #D6E6FF;
+        }
+
+        &__icon {
+            background: #3C7EE0;
+            color: #FFF;
+        }
+
+        .btn_red {
+            padding: 0 20px;
+            background: transparent;
+            border: 1px solid #3C7EE0;
+            color: #3C7EE0;
+        }
+
+        &__card {
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(55deg, rgba(132, 132, 132, 0.59), rgba(64, 64, 64, 0.56));
+            }
+
+            .icon {
+                opacity: 1;
+                z-index: 2;
+            }
+        }
+
+        &__bottom_card {
+            &__item {
+                background: #D6E6FF;
+                z-index: 1;
+
+                img {
+                    display: block;
+                    z-index: -1;
+
+                    &:not(.light) {
+                        display: none;
+                    }
+                }
+
+                h2 {
+                    span {
+                        background: linear-gradient(to right, #3C7EE0, #1D59B3);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+    // Interactive Lessons end
+
+    // Community support
+    .community_support {
+        &__block {
+            background: url('../images/community_support_bg_light.png') center/cover no-repeat;
+
+            &_item {
+                img {
+                    display: block;
+
+                    &:not(.light) {
+                        display: none;
+                    }
+                }
+
+                h2 {
+                    span {
+                        color: #3C7EE0;
+                    }
+                }
+            }
+        }
+    }
+    // Community support end
+
+    // Join us
+    .join_us {
+        &__bg {
+            display: none;
+        }
+
+        &__title {
+            span {
+                background: linear-gradient(to right, #3C7EE0, #1E59B0);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+        &__card {
+            background: #D6E6FF;
+
+            &_left {
+                img {
+                    display: block;
+
+                    &:not(.light) {
+                        display: none;
+                    }
+                }
+            }
+
+            &_right__bg {
+                display: block;
+
+                &:not(.light) {
+                    display: none;
+                }
+            }
+
+            &_link {
+                img {
+                    display: block;
+
+                    &:not(.light) {
+                        display: none;
+                    }
+                }
+            }
+
+            .networks {
+                li {
+                    img {
+                        display: block;
+
+                        &:not(.light) {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Join us end
+
+    // Doubts
+    .doubts {
+        &__description {
+            span {
+                color: #3C7EE0;
+            }
+        }
+
+        &__card {
+            &_item {
+                background: linear-gradient(to bottom, rgba(203, 217, 244, 0.2), rgba(75, 89, 117, 0.2));
+
+                h3 {
+                    color: #3C7EE0;
+                }
+            }
+        }
+    }
+    // Doubts end
+
+    // Ready
+    .ready {
+        &__card {
+            background: url('../images/ready_card_bg_light.png') center/cover no-repeat;
+        }
+
+        &__icon {
+            background: #3C7EE0;
+            color: #FFF;
+        }
+
+        &__title {
+            margin: 20px 0;
+        }
+
+        &__description {
+            margin-bottom: 35px;
+
+            span {
+                color: #3C7EE0;
+            }
+        }
+
+
+    }
+    // Ready end
+
+    // Register
+    .register {
+        background: transparent;
+        
+        &__bg {
+            display: none;
+        }
+
+        &__form {
+            background: #D6E6FF;
+
+            .bottom_checkbox {
+                input {
+                    &::before {
+                        background: #A5A5A5;
+                        border: 1px solid #919191;
+                    }
+
+                    &::after {
+                        color: #FFF;
+                    }
+                }
+            }
+
+            .form_submit {
+                button {
+                    color: white;
+                    background: linear-gradient(to right, #23A2E9, #2579A8);
+                    height: 39px;
+                    width: 183px;
+                    padding: 0;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    // Register end
+
+    // Login
+    .login {
+        background: transparent;
+        
+        .main_container {
+            padding: 185px 0 111px;
+            position: relative;
+            z-index: 1;
+        }
+
+        &__bg {
+            display: none;
+        }
+
+        &__title {
+            line-height: 55px;
+            margin-bottom: 60px;
+        }
+
+        &__form {
+            background: #D6E6FF;
+
+            .form_group {
+                gap: 20px;
+            }
+
+            .form_submit {
+                margin-top: 13px;
+                gap: 21px;
+
+                .btn_danger {
+                    height: 39px;
+                    background: linear-gradient(to right, #23A2E9, #2579A8);
+                    font-size: 14px;
+                    width: 114px;
+                    padding: 0;
+                }
+
+                .btn_red {
+                    padding: 0;
+                    background: linear-gradient(to right, #3EB9E0, #3B91AC);
+                    width: 183px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    // Login end
+}

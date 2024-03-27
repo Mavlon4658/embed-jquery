@@ -204,6 +204,10 @@ body {
             top: 50%;
             left: -25px;
             transform: translateY(-50%);
+
+            &:nth-child(2) {
+                display: none;
+            }
         }
 
         &_text {
@@ -315,7 +319,7 @@ body {
         text-transform: uppercase;
         margin-bottom: 9px;
 
-        span {
+        .dark {
             color: #E92323;
         }
     }
@@ -333,6 +337,10 @@ body {
         z-index: -1;
         left: -91px;
         top: 148px;
+
+        &.light {
+            display: none;
+        }
     }
 
     &__right_card {
@@ -340,6 +348,10 @@ body {
         top: 130px;
         right: 0;
         z-index: -1;
+
+        &.light {
+            display: none;
+        }
     }
 }
 // Hoem end
@@ -404,6 +416,10 @@ body {
             border-radius: 5px;
             position: relative;
 
+            img.light {
+                display: none;
+            }
+
             &:nth-child(1) {
                 img {
                     position: absolute;
@@ -454,6 +470,10 @@ body {
                 width: 503px;
             }
 
+            img.light {
+                display: none;
+            }
+
             h2 {
                 margin: 13px 0;
 
@@ -473,6 +493,23 @@ body {
 // Join us
 .join_us {
     margin-bottom: 76px;
+
+    .main_container {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__bg {
+        width: 408px;
+        height: 343px;
+        filter: blur(141px);
+        background: linear-gradient(165.43deg, rgba(188, 41, 41, 0.13) 46.271%,rgba(69, 14, 14, 0.47) 86.183%);
+        position: absolute;
+        z-index: -1;
+        top: -140px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 
     &__title {
         margin-bottom: 28px;
@@ -503,18 +540,32 @@ body {
                 position: absolute;
                 top: 39px;
                 left: 351px;
+
+                &.light {
+                    display: none;
+                }
             }
         }
 
         &_link {
             gap: 15px;
             margin-bottom: 20px;
+            font-size: 16px;
+            font-weight: 600;
+
+            img.light {
+                display: none;
+            }
         }
 
         &_right__bg {
             position: absolute;
             right: 394px;
             bottom: 22px;
+
+            &.light {
+                display: none;
+            }
         }
 
         .networks {
@@ -523,6 +574,10 @@ body {
                 font-weight: 600;
                 line-height: 20px;
                 text-transform: uppercase;
+
+                img.light {
+                    display: none;
+                }
 
                 &:nth-child(1) {
                     margin-right: 20px;
@@ -551,7 +606,13 @@ body {
 
     &__description {
         max-width: 475px;
-        margin-bottom: 58px;
+        margin: 0 auto 58px;
+        font-weight: 600;
+
+        span {
+            font-weight: 600;
+            display: inline;
+        }
     }
 
     &__card {
@@ -562,6 +623,12 @@ body {
             background: url('../images/doubts_card_bg.png') center/cover no-repeat;
             border-radius: 5px;
             padding: 19px 25px 21px;
+
+            img {
+                width: 62px;
+                height: 62px;
+                border-radius: 50%;
+            }
 
             p {
                 font-size: 14px;
@@ -615,6 +682,11 @@ body {
 
     &__description {
         margin-bottom: 35px;
+        font-weight: 600;
+
+        span {
+            font-weight: 600;
+        }
     }
 
 
@@ -705,6 +777,21 @@ body {
     
     .main_container {
         padding: 185px 0 111px;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__bg {
+        width: 553px;
+        height: 410px;
+        filter: blur(141px);
+        background: linear-gradient(165.43deg, rgba(188, 41, 41, 0.13) 45.556%,rgba(128, 15, 15, 0.66) 83.535%);
+        border-radius: 50%;
+        position: absolute;
+        z-index: -1;
+        top: 240px;
+        left: 50%;
+        transform: translateX(calc(-50% - 20px));
     }
 
     &__title {
@@ -740,3 +827,9 @@ body {
     }
 }
 // Login end
+
+
+
+
+
+@import './light-theme';
