@@ -3,45 +3,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/header_logo.svg" type="image/x-icon">
     <title>Jquery embed</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
     <!-- Style CSS -->
-
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            Hello world
-        </div>
-    </header>
-    <!-- Header end -->
-    
 
-    <!-- Home -->
-    <section class="home">
-        <div class="container">
-            <h1>Hello</h1>
-        </div>
-    </section>
-    <!-- Home end -->
+    <div class="wrapper">
 
-    <div class="container">
-        <div class="border" id="editor" style="height: 200px !important;">i = 1
-for color in 'red', 'orange', 'yellow', 'green', 'cyan', 'blue', 'violet':
-    print('#', i, ' color of rainbow is ', color, sep = '')
-    i += 1</div>
+        <!-- Header -->
+        <header class="header">
+            <div class="main_container d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center header__block_left">
+                    <a href="/" class="header__logo">
+                        <img src="./images/header_logo.svg" alt="">
+                        <span class="d-flex flex-column header__logo_text">
+                            ЛОГОТИП
+                            <span>вашей компании</span>
+                        </span>
+                    </a>
+        
+                    <ul class="d-flex align-items-center header__navs">
+                        <li>
+                            <a href="#">для преподователей</a>
+                        </li>
+                        <li>
+                            <a href="#">для компаний</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="d-flex align-items-center header__block_right">
+                    <div class="header__auth_link">
+                        <a href="#">войти</a> 
+                        или
+                        <a href="#">зарегистрироваться</a>
+                    </div>
+                    <div class="change_theme">
+                        <button class="change_theme__btn btn_red">
+                            <span>сменить тему</span>
+                            <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.00004 1L4.89504 6L8.79004 1" stroke="#E92323"/>
+                            </svg>
+                        </button>
+                        <ul>
+                            <li>
+                                <button>светлая</button>
+                            </li>
+                            <li>
+                                <button class="active">тёмная</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header end -->
+    
+        <!-- Home -->
+        <section class="home">
+            <img src="./images/home_bg.png" alt="" class="home__bg">
+            <div class="main_container">
+                <div class="home__bg_circle"></div>
+                <img src="./images/home_left_card.png" alt="" class="home__left_card">
+                <img src="./images/home_right_card.png" alt="" class="home__right_card">
+                <h1 class="home__title">Бесплатное обучение программированию <span>на Python</span></h1>
+                <p>У нас нет скрытых платежей или подписок. Весь наш контент доступен абсолютно бесплатно для всех пользователей.</p>
+                <a href="#" class="btn_danger">начать</a>
+            </div>
+        </section>
+        <!-- Home end -->
+
+        <!-- Interactive lessons -->
+        <section class="interactive">
+            <div class="main_container">
+                <div class="d-flex flex-column align-items-start interactive__block">
+                    <span class="interactive__icon">
+                        &lt;/&gt;
+                    </span>
+                    <h2 class="main_title interactive__title">Интерактивные уроки и задачи</h2>
+                    <p class="main_description interactive__description"><span>Изучайте программирование на Python,</span> решая практические задачи и участвуя в <span>интерактивных уроках.</span> Наши методики обучения разработаны таким образом, чтобы сделать <span>процесс обучения увлекательным и эффективным.</span></p>
+                    <a href="#" class="btn_red">присоединиться</a>
+                    <div class="interactive__card">
+                        <img src="./images/interactive_card.png" alt="">
+                        <img src="./images/interactive_card_icon.png" alt="" class="icon">
+                    </div>
+                </div>
+                <div class="d-flex align-items-stretch interactive__bottom_card">
+                    <div class="interactive__bottom_card__item">
+                        <img src="./images/interactive_bottom_card_1.png" alt="">
+                        <h2 class="main_title">Управление классами <br> <span>для учителей</span></h2>
+                        <p class="main_description">Для учителей мы предлагаем удобный инструмент для управления классами и отслеживания успеваемости учеников. Создавайте и редактируйте группы, добавляйте учеников и отслеживайте их прогресс в реальном времени.</p>
+                    </div>
+                    <div class="interactive__bottom_card__item">
+                        <img src="./images/interactive_bottom_card_2.png" alt="">
+                        <h2 class="main_title">Рейтинг и достижения</h2>
+                        <p class="main_description">Система рейтинга и достижений помогает мотивировать пользователей к достижению новых целей и соревнованию с другими участниками. За каждое решение задачи вы получаете баллы и продвигаетесь в рейтинге.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Interactive lessons end -->
+
+        <!-- Community support -->
+        <section class="community_support">
+            <div class="main_container">
+                <div class="d-flex align-items-stretch justify-content-between community_support__block">
+                    <div class="community_support__block_item">
+                        <img src="./images/community_support_card_icon_1.png" alt="">
+                        <h2 class="sec_title">Поддержка сообщества</h2>
+                        <p class="main_description">Присоединяйтесь к нашему дружественному сообществу Python-разработчиков. Обменивайтесь опытом, задавайте вопросы и помогайте друг другу достигать новых высот в программировании.</p>
+                    </div>
+                    <div class="d-flex flex-column justify-content-end align-items-end community_support__block_item">
+                        <img src="./images/community_support_card_icon_2.png" alt="">
+                        <h2 class="sec_title"><span>Доступ</span> к справочным материалам</h2>
+                        <p class="main_description">На нашей платформе вы найдете обширный справочник по языку Python, библиотекам и методам. Изучайте основы и наращивайте свои знания вместе с нами.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Community support end -->
+
+        <!-- Join us -->
+        <section class="join_us">
+            <div class="main_container">
+                <div class="d-flex flex-column align-items-center">
+                    <h2 class="text-center sec_title join_us__title">
+                        Присоединяйтесь к нам уже <br> сегодня и начните свой путь к миру <br> <span>Python-программирования!</span>
+                    </h2>
+                    <a href="#" class="btn_white">начать обучение</a>
+                </div>
+                <div class="d-flex align-items-center justify-content-between join_us__card">
+                    <div class="join_us__card_left">
+                        <h3 class="sec_title">Еще вопросы?</h3>
+                        <p class="main_description">Если у вас есть вопросы или требуется помощь, <br> обратитесь к нашей службе поддержки.</p>
+                        <img src="./images/join_us_card_left_bg.png" alt="">
+                    </div>
+                    <div class="join_us__card_right">
+                        <img src="./images/join_us_card_right_bg.png" alt="" class="join_us__card_right__bg">
+                        <a href="#" class="d-flex align-items-center join_us__card_link">
+                            <img src="./images/phone_icon.png" alt="">
+                            <span>Телефон: 8 (800) 888 88-88</span>
+                        </a>
+                        <a href="#" class="d-flex align-items-center join_us__card_link">
+                            <img src="./images/email_icon.png" alt="">
+                            <span>Email: company@name.ru</span>
+                        </a>
+                        <ul class="d-flex align-items-center networks">
+                            <li>Наши соц сети:</li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/telegram.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/whatsapp.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/wiber.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Join us end -->
+
+        <!-- Doubts -->
+        <section class="doubts">
+            <div class="main_container">
+                <h2 class="text-center sec_title doubts__title">Остались сомнения?</h2>
+                <p class="text-center main_description doubts__description">Посмотрите отзывы наших пользователей и узнайте, почему они выбрали нашу платформу для обучения Python.</p>
+                <ul class="d-flex justify-content-between align-items-stretch doubts__card">
+                    <li class="text-center doubts__card_item">
+                        <img src="./images/user_1.png" alt="">
+                        <p>Очень хорошо сделано и отличный пример мастерства обучения.</p>
+                        <h3 class="name">Келли Уильямс</h3>
+                        <h4 class="user_name">@this_ahmed</h4>
+                    </li>
+                    <li class="text-center doubts__card_item">
+                        <img src="./images/user_2.png" alt="">
+                        <p>Очень хорошо сделано и отличный пример мастерства обучения.</p>
+                        <h3 class="name">Келли Уильямс</h3>
+                        <h4 class="user_name">@this_ahmed</h4>
+                    </li>
+                    <li class="text-center doubts__card_item">
+                        <img src="./images/user_3.png" alt="">
+                        <p>Очень хорошо сделано и отличный пример мастерства обучения.</p>
+                        <h3 class="name">Келли Уильямс</h3>
+                        <h4 class="user_name">@this_ahmed</h4>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Doubts end -->
+
+        <!-- Ready -->
+        <section class="ready">
+            <div class="main_container">
+                <div class="d-flex flex-column align-items-center ready__card">
+                    <span class="ready__icon">&lt;/&gt;</span>
+                    <h2 class="sec_title ready__title">Готовы начать?</h2>
+                    <p class="main_description ready__description">Присоединяйтесь к нам уже сегодня и начните свой <br> путь к успеху в мире Python-программирования!</p>
+                    <a href="#" class="btn_white">зарегистрироваться</a>
+                </div>
+            </div>
+        </section>
+        <!-- Ready end -->
+
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.5/ace.js" type="text/javascript" charset="utf-8"></script>
-    <script>
-        var editor = ace.edit("editor");
-        editor.setTheme("ace/theme/monokai");
-        editor.session.setMode("ace/mode/javascript");
-    </script>
+    
 
     <!-- Jquery JS -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
@@ -52,3 +232,4 @@ for color in 'red', 'orange', 'yellow', 'green', 'cyan', 'blue', 'violet':
     <script src="./js/main.js"></script>
 </body>
 </html>
+
