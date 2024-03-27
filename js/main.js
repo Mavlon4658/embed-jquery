@@ -54,4 +54,11 @@ $(document).ready(function () {
             $('.change_theme ul').slideUp(300);
         })
     })
+
+    $('.lesson_list__title').each(function (idx, el) {
+        $(el).click(function () {
+            $('.lesson_list__child').not($('.lesson_list__child')[idx]).slideUp(300);
+            $($('.lesson_list__child')[idx]).slideToggle(300);
+        })
+    })
 })

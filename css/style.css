@@ -176,7 +176,7 @@ body {
   top: 42px;
   left: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
 }
 .header__logo {
   position: relative;
@@ -679,6 +679,187 @@ body {
   padding: 0 8px 0 9px;
 }
 
+.theory .main_container {
+  position: relative;
+  padding: 187px 40px 126px;
+  max-width: 1352px;
+  gap: 26px;
+  z-index: 2;
+  background: #0F0F10;
+}
+.theory__left {
+  width: calc(100% - 342px - 26px);
+  background: url("../images/theory_left_bg.png") center/cover no-repeat;
+  border-radius: 5px;
+  padding: 32px 45px 45px 51px;
+}
+.theory__left .main_description {
+  font-weight: 500;
+}
+.theory__right {
+  width: 342px;
+  gap: 32px;
+}
+.theory__title {
+  position: relative;
+  padding-bottom: 32px;
+}
+.theory__title::before {
+  content: "";
+  background: #434343;
+  position: absolute;
+  height: 1px;
+  width: calc(100% + 96px);
+  left: -51px;
+  bottom: 0;
+}
+.theory .online_trener {
+  gap: 20px;
+  margin: 63px 0 80px;
+}
+.theory .online_trener img {
+  width: 337px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+.theory .online_trener .title {
+  font-size: 23px;
+  text-decoration: underline;
+}
+.theory .online_trener p {
+  margin: 23px 0;
+  font-weight: 400;
+}
+.theory .online_trener .btn_red {
+  height: 32px;
+  width: 149px;
+}
+.theory .lesson_list {
+  gap: 8px;
+  margin-top: 50px;
+}
+.theory .lesson_list__title {
+  font-size: 18px;
+  margin-bottom: 15px;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: linear-gradient(90deg, rgba(9, 9, 9, 0.14) 11.507%, rgba(18, 8, 8, 0.18) 80.007%);
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.theory .lesson_list__title svg {
+  width: 25px;
+}
+.theory .lesson_list__title svg path {
+  fill: #FFF;
+}
+.theory .lesson_list__child {
+  padding-left: 20px;
+  display: none;
+}
+.theory .lesson_list__child a {
+  font-size: 14px;
+  padding: 4px 0;
+}
+.theory__search {
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+}
+.theory__search::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(243, 243, 243, 0.77), #9B6969);
+  border-radius: 5px;
+  opacity: 0.18;
+  z-index: -1;
+}
+.theory__search input {
+  width: 100%;
+  height: 69px;
+  padding: 0 55px 0 28px;
+  font-size: 16px;
+  color: #FFF;
+}
+.theory__search input::-moz-placeholder {
+  color: #FFF;
+}
+.theory__search input::placeholder {
+  color: #FFF;
+}
+.theory__search button {
+  position: absolute;
+  top: 50%;
+  right: 19px;
+  transform: translateY(-50%);
+}
+.theory__search img.light {
+  display: none;
+}
+.theory__category {
+  background: url("../images/theory_category_bg.png") center/cover no-repeat;
+  border-radius: 5px;
+  padding: 24px 40px 62px 28px;
+}
+.theory__category h3 {
+  color: #F63131;
+  font-size: 16px;
+  margin-bottom: 23px;
+  text-transform: uppercase;
+}
+.theory__category ul {
+  gap: 25px;
+}
+.theory__category ul li {
+  font-size: 16px;
+  padding-left: 25px;
+  position: relative;
+}
+.theory__category ul li::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  left: 10.5px;
+  border-radius: 50%;
+  background: white;
+  top: 11.5px;
+}
+.theory__category ul li img.light {
+  display: none;
+}
+.theory__category .networks li {
+  padding: 0;
+  gap: 15px;
+}
+.theory__category .networks li::before {
+  display: none;
+}
+
+.anons {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: white;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 600;
+}
+
 body.light-theme {
   background: #F7F7F7;
   color: #1E1E1E;
@@ -960,4 +1141,58 @@ body.light-theme .login__form .form_submit .btn_red {
   background: linear-gradient(to right, #3EB9E0, #3B91AC);
   width: 183px;
   font-size: 14px;
+}
+body.light-theme .theory .main_container {
+  background: #FFFFFF;
+}
+body.light-theme .theory__left {
+  background: #D6E6FF;
+}
+body.light-theme .theory__title::before {
+  background: #B2C9D6;
+}
+body.light-theme .theory .online_trener .title {
+  color: #3E3E3E;
+}
+body.light-theme .theory .online_trener .btn_red {
+  border: 1px solid #3C7EE0;
+  background: transparent;
+  color: #3C7EE0;
+}
+body.light-theme .theory .lesson_list__title svg path {
+  fill: #1E1E1E;
+}
+body.light-theme .theory__search::before {
+  background: #D6E6FF;
+  opacity: 1;
+}
+body.light-theme .theory__search input {
+  color: #1e1e1e;
+}
+body.light-theme .theory__search input::-moz-placeholder {
+  color: #737373;
+}
+body.light-theme .theory__search input::placeholder {
+  color: #737373;
+}
+body.light-theme .theory__search img {
+  display: block;
+}
+body.light-theme .theory__search img:not(.light) {
+  display: none;
+}
+body.light-theme .theory__category {
+  background: #D6E6FF;
+}
+body.light-theme .theory__category h3 {
+  color: #3C7EE0;
+}
+body.light-theme .theory__category ul li::before {
+  background: #1E1E1E;
+}
+body.light-theme .theory__category .networks li img {
+  display: block;
+}
+body.light-theme .theory__category .networks li img:not(.light) {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

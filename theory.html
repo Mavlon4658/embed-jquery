@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/header_logo.svg" type="image/x-icon">
+    <title>Jquery embed</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <!-- For anons -->
+        <a href="#" class="anons">
+            Anons
+        </a>
+        <!-- For anons end -->
+
+        <!-- Header -->
+        <header class="header">
+            <div class="main_container d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center header__block_left">
+                    <a href="/" class="header__logo">
+                        <img src="./images/header_logo.svg" alt="">
+                        <img src="./images/header_logo_light.svg" alt="" class="light">
+                        <span class="d-flex flex-column header__logo_text">
+                            ЛОГОТИП
+                            <span>вашей компании</span>
+                        </span>
+                    </a>
+
+                    <ul class="d-flex align-items-center header__navs">
+                        <li>
+                            <a href="#">для преподователей</a>
+                        </li>
+                        <li>
+                            <a href="#">для компаний</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="d-flex align-items-center header__block_right">
+                    <div class="header__auth_link">
+                        <a href="./login.html">войти</a> 
+                        или
+                        <a href="./registration.html">зарегистрироваться</a>
+                    </div>
+                    <div class="change_theme">
+                        <button class="change_theme__btn btn_red">
+                            <span>сменить тему</span>
+                            <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.00004 1L4.89504 6L8.79004 1" stroke="#E92323"/>
+                            </svg>
+                        </button>
+                        <ul>
+                            <li>
+                                <button>светлая</button>
+                            </li>
+                            <li>
+                                <button class="active">тёмная</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header end -->
+        
+
+        <!-- Theory -->
+        <section class="theory">
+            <div class="d-flex align-items-stretch main_container">
+
+                <div class="theory__left">
+                    <h1 class="text-center main_title theory__title">Самоучитель Python</h1>
+                    <div class="d-flex align-items-stretch online_trener">
+                        <img src="./images/online_trener_card.png" alt="">
+                        <div class="d-flex flex-column align-items-start">
+                            <a href="#" class="title">Онлайн-тренажер Python 3 для начинающих</a>
+                            <p class="main_description">Теория без воды. Задачи с автоматической проверкой. Подсказки на русском языке. Работает в любом современном браузере.</p>
+                            <a href="#" class="btn_red">начать бесплатно</a>
+                        </div>
+                    </div>
+                    <p class="main_description">Самоучитель Python 3, собранный из материалов данного сайта. Предназначен в основном для тех, кто хочет изучить язык программирования Python с нуля.</p>
+
+                    <ul class="d-flex flex-column lesson_list">
+                        <li>
+                            <h3 class="lesson_list__title">
+                                Тема 1: Введение в Python
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/>
+                                </svg>
+                            </h3>
+
+                            <ul class="lesson_list__child">
+                                <li>
+                                    <a href="#">1.1. История Python и его возможности.</a>
+                                </li>
+                                <li>
+                                    <a href="#">1.2. Установка и настройка Python.</a>
+                                </li>
+                                <li>
+                                    <a href="#">1.3. Установка и настройка Pycharm</a>
+                                </li>
+                                <li>
+                                    <a href="#">1.4. Запуск интерпретатора Python.</a>
+                                </li>
+                                <li>
+                                    <a href="#">1.5. Работа с компилятором python и Pycharm.</a>
+                                </li>
+                                <li>
+                                    <a href="#">1.6 pip</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3 class="lesson_list__title">
+                                Тема 2: Основы программирования на Python
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/>
+                                </svg>
+                            </h3>
+
+                            <ul class="lesson_list__child">
+                                <li>
+                                    <a href="#">2.1. Первая программа на Python.</a>
+                                </li>
+                                <li>
+                                    <a href="#">2.2. Основы синтаксиса Python.</a>
+                                </li>
+                                <li>
+                                    <a href="#">2.3. Переменные и типы данных.</a>
+                                </li>
+                                <li>
+                                    <a href="#">2.4. Ввод и вывод данных.</a>
+                                </li>
+                                <li>
+                                    <a href="#">2.5. Операторы и выражения.</a>
+                                </li>
+                                <li>
+                                    <a href="#">2.6  Ключевые слова</a>
+                                </li>
+                                <li>
+                                    <a href="#">2.7 преобразование типов</a>
+                                </li>
+                                <li>
+                                    <a href="#">2.8 функции</a>
+                                </li>
+                                <li>
+                                    <a href="#">2.9 конкатенация</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3 class="lesson_list__title">
+                                Тема 3: Управляющие конструкции
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/>
+                                </svg>
+                            </h3>
+
+                            <ul class="lesson_list__child">
+                                <li>
+                                    <a href="#">3.1. Условные операторы (if, elif, else).</a>
+                                </li>
+                                <li>
+                                    <a href="#">3.2. Циклы for.</a>
+                                </li>
+                                <li>
+                                    <a href="#">3.2. Циклы while.</a>
+                                </li>
+                                <li>
+                                    <a href="#">3.3. Операторы break, continue.</a>
+                                </li>
+                                <li>
+                                    <a href="#">3.4. Генераторы списков.</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3 class="lesson_list__title">
+                                Тема 4: Структуры данных
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/>
+                                </svg>
+                            </h3>
+
+                            <ul class="lesson_list__child">
+                                <li>
+                                    <a href="#">4.1. Списки (list).</a>
+                                </li>
+                                <li>
+                                    <a href="#">4.2. Кортежи (tuple).</a>
+                                </li>
+                                <li>
+                                    <a href="#">4.3. Строки (string).</a>
+                                </li>
+                                <li>
+                                    <a href="#">4.4. Словари (dictionary).</a>
+                                </li>
+                                <li>
+                                    <a href="#">4.5. Множества (set).</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3 class="lesson_list__title">
+                                Тема 5: Функции и модули
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/>
+                                </svg>
+                            </h3>
+
+                            <ul class="lesson_list__child">
+                                <li>
+                                    <a href="#">5.1. Определение и вызов функций.</a>
+                                </li>
+                                <li>
+                                    <a href="#">5.2. Параметры функций.</a>
+                                </li>
+                                <li>
+                                    <a href="#">5.3. Возвращаемые значения.</a>
+                                </li>
+                                <li>
+                                    <a href="#">5.4. Работа с модулями и пакетами.</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3 class="lesson_list__title">
+                                Тема 6: Обработка исключений
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/>
+                                </svg>
+                            </h3>
+
+                            <ul class="lesson_list__child">
+                                <li>
+                                    <a href="#">6.1. Обработка и генерация исключений.</a>
+                                </li>
+                                <li>
+                                    <a href="#">6.2. Конструкция try-except-finally.</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3 class="lesson_list__title">
+                                Тема 7: Работа с файлами и потоками
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/>
+                                </svg>
+                            </h3>
+
+                            <ul class="lesson_list__child">
+                                <li>
+                                    <a href="#">7.1. Открытие и закрытие файлов.</a>
+                                </li>
+                                <li>
+                                    <a href="#">7.2. Чтение и запись данных в файлы.</a>
+                                </li>
+                                <li>
+                                    <a href="#">7.3. Работа с текстовыми и бинарными файлами.</a>
+                                </li>
+                                <li>
+                                    <a href="#">7.4. Работа с потоками ввода-вывода (I/O).</a>
+                                </li>
+                                <li>
+                                    <a href="#">7.5 Работа с файлами exel</a>
+                                </li>
+                                <li>
+                                    <a href="#">7.6 Работа с файлами word</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3 class="lesson_list__title">
+                                Тема 8: файловая система
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/>
+                                </svg>
+                            </h3>
+
+                            <ul class="lesson_list__child">
+                                <li>
+                                    <a href="#">8.1. Работа с папками.</a>
+                                </li>
+                                <li>
+                                    <a href="#">8.2. Работа с файлами.</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3 class="lesson_list__title">
+                                Тема 9: Объектно-ориентированное программирование (ООП)
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/>
+                                </svg>
+                            </h3>
+
+                            <ul class="lesson_list__child">
+                                <li>
+                                    <a href="#">9.1. Классы и объекты.</a>
+                                </li>
+                                <li>
+                                    <a href="#">9.2. Атрибуты и методы.</a>
+                                </li>
+                                <li>
+                                    <a href="#">9.3. Наследование и полиморфизм.</a>
+                                </li>
+                                <li>
+                                    <a href="#">9.4. Инкапсуляция.</a>
+                                </li>
+                                <li>
+                                    <a href="#">9.5. Специальные методы классов.</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3 class="lesson_list__title">
+                                Тема 10: Регулярные выражения
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/>
+                                </svg>
+                            </h3>
+
+                            <ul class="lesson_list__child">
+                                <li>
+                                    <a href="#">10.1. Синтаксис регулярных выражений.</a>
+                                </li>
+                                <li>
+                                    <a href="#">10.2. Использование регулярных выражений для поиска и замены текста.</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3 class="lesson_list__title">
+                                Тема 11: Дополнительные темы
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/>
+                                </svg>
+                            </h3>
+
+                            <ul class="lesson_list__child">
+                                <li>
+                                    <a href="#">11.1. Генераторы.</a>
+                                </li>
+                                <li>
+                                    <a href="#">11.2. Декораторы.</a>
+                                </li>
+                                <li>
+                                    <a href="#">11.3. Контекстные менеджеры.</a>
+                                </li>
+                                <li>
+                                    <a href="#">11.4. Параллельное и асинхронное программирование.</a>
+                                </li>
+                                <li>
+                                    <a href="#">11.5. Тестирование с помощью модулей unittest и pytest.</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="d-flex flex-column theory__right">
+                    <form class="theory__search">
+                        <input type="text" placeholder="поиск">
+                        <button type="submit">
+                            <img src="./images/search_icon.png" alt="">
+                            <img src="./images/search_icon_light.png" alt="" class="light">
+                        </button>
+                    </form>
+
+                    <div class="theory__category">
+                        <h3>категории</h3>
+                        <ul class="d-flex flex-column">
+                            <li>Книги о Python</li>
+                            <li>GUI (графический интерфейс пользователя)</li>
+                            <li>Курсы Python</li>
+                            <li>Модули</li>
+                            <li>Новости мира Python</li>
+                            <li>NumPy</li>
+                            <li>Обработка данных</li>
+                            <li>Основы программирования</li>
+                            <li>Примеры программ</li>
+                            <li>Типы данных в Python</li>
+                            <li>Видео</li>
+                            <li>Python для Web</li>
+                            <li>Работа для Python-программистов</li>
+                        </ul>
+                    </div>
+
+                    <div class="theory__category">
+                        <h3>Полезные материалы</h3>
+                        <ul class="d-flex flex-column">
+                            <li>Сделай свой вклад в развитие сайта!</li>
+                            <li>Самоучитель Python</li>
+                            <li>Карта сайта</li>
+                            <li>Отзывы на книги по Python</li>
+                            <li>Реклама на сайте</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="theory__category">
+                        <h3>Мы в соцсетях</h3>
+                        <ul class="d-flex align-items-center networks">
+                            <li>
+                                <a href="#">
+                                    <img src="./images/our_telegram.png" alt="">
+                                    <img src="./images/our_telegram_light.png" alt="" class="light">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/our_wiber.png" alt="">
+                                    <img src="./images/our_wiber_light.png" alt="" class="light">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/our_whatsapp.png" alt="">
+                                    <img src="./images/our_whatsapp_light.png" alt="" class="light">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Theory end -->
+
+    </div>
+    
+
+    <!-- Jquery JS -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- Main JS -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
+

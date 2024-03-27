@@ -440,4 +440,95 @@ body.light-theme {
         }
     }
     // Login end
+
+    // Theory
+    .theory {
+        .main_container {
+            background: #FFFFFF;
+        }
+
+        &__left {
+            background: #D6E6FF;
+        }
+
+        &__title {
+            &::before {
+                background: #B2C9D6;
+            }
+        }
+
+        .online_trener {
+            .title {
+                color: #3E3E3E;
+            }
+
+            .btn_red {
+                border: 1px solid #3C7EE0;
+                background: transparent;
+                color: #3C7EE0;
+            }
+        }
+
+        .lesson_list {
+            &__title {
+                svg {
+                    path {
+                        fill: #1E1E1E;
+                    }
+                }
+            }
+        }
+
+        &__search {
+            &::before {
+                background: #D6E6FF;
+                opacity: 1;
+            }
+
+            input {
+                color: #1e1e1e;
+
+                &::placeholder {
+                    color: #737373;
+                }
+            }
+
+            img {
+                display: block;
+
+                &:not(.light) {
+                    display: none;
+                }
+            }
+        }
+
+        &__category {
+            background: #D6E6FF;
+
+            h3 {
+                color: #3C7EE0;
+            }
+
+            ul {
+                li {
+                    &::before {
+                        background: #1E1E1E;
+                    }
+                }
+            }
+
+            .networks {
+                li {
+                    img {
+                        display: block;
+
+                        &:not(.light) {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Theory end
 }
