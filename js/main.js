@@ -48,6 +48,7 @@ $(document).ready(function () {
             
             if (idx == 1) {
                 darkTheme();
+
             }
             $('.change_theme ul li button').not($(el)).removeClass('active');
             $(el).addClass('active');
@@ -59,6 +60,27 @@ $(document).ready(function () {
         $(el).click(function () {
             $('.lesson_list__child').not($('.lesson_list__child')[idx]).slideUp(300);
             $($('.lesson_list__child')[idx]).slideToggle(300);
+        })
+    })
+
+    $('.editor_wrap').each(function (idx, el) {
+        let editor = ace.edit($(el).find('.code-editor')[0]);
+    
+        editor.setOptions({
+            useWrapMode: true,
+            highlightActiveLine: false,
+            showPrintMargin: false,
+            theme: 'ace/theme/monokai',
+            mode: 'ace/mode/python',
+        })
+
+        editor.setReadOnly(true);
+
+        console.log(ace.require("ace/ext/themelist"));
+
+        $(el).find('.run-code').click(function () {
+            let code = editor.getValue();
+            console.log(code);
         })
     })
 })

@@ -471,6 +471,8 @@ body.light-theme {
 
         .lesson_list {
             &__title {
+                background: linear-gradient(90.00deg, rgba(115, 159, 173, 0.14) 11.507%,rgba(149, 168, 182, 0.18) 80.007%);
+                
                 svg {
                     path {
                         fill: #1E1E1E;
@@ -505,7 +507,7 @@ body.light-theme {
         &__category {
             background: #D6E6FF;
 
-            h3 {
+            h3, h4 {
                 color: #3C7EE0;
             }
 
@@ -514,6 +516,10 @@ body.light-theme {
                     &::before {
                         background: #1E1E1E;
                     }
+                }
+
+                .child_category {
+                    background: rgba(189, 198, 249, 0.57);
                 }
             }
 
@@ -528,6 +534,48 @@ body.light-theme {
                     }
                 }
             }
+        }
+    }
+
+    .editor_wrap {
+        background: #fff;
+        border: 1px solid #C9C9C9;
+    
+        .editor_top {
+            border-bottom: 1px solid #BABABA;
+        }
+    
+        .ace-monokai {
+            background: transparent;
+
+            .ace_line {
+                color: #1E1E1E;
+            }
+    
+            .ace_gutter {
+                background: rgba(196, 196, 196, 0.64);
+                border: 0;
+            }
+
+            .ace_gutter-active-line {
+                background: transparent;
+            }
+
+            .ace_pare, .ace_identifier, .ace_paren, .ace_lparen, .ace_rparen, .ace_punctuation {
+                color: #1E1E1E;
+            }
+
+            .ace_string {
+                color: #68B23C;
+            }
+        }
+
+        .code-editor {
+            margin-top: 0;
+        }
+
+        .ace-monokai .ace_entity.ace_name.ace_tag, .ace-monokai .ace_keyword, .ace-monokai .ace_meta.ace_tag, .ace-monokai .ace_storage {
+            color: #3C7EE0;
         }
     }
     // Theory end

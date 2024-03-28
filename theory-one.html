@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/header_logo.svg" type="image/x-icon">
+    <title>Jquery embed</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <!-- For anons -->
+        <a href="#" class="anons">
+            Anons
+        </a>
+        <!-- For anons end -->
+
+        <!-- Header -->
+        <header class="header theory_header">
+            <div class="main_container d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center header__block_left">
+                    <a href="/" class="header__logo">
+                        <img src="./images/header_logo.svg" alt="">
+                        <img src="./images/header_logo_light.svg" alt="" class="light">
+                        <span class="d-flex flex-column header__logo_text">
+                            ЛОГОТИП
+                            <span>вашей компании</span>
+                        </span>
+                    </a>
+
+                    <ul class="d-flex align-items-center header__navs">
+                        <li>
+                            <a href="#">для преподователей</a>
+                        </li>
+                        <li>
+                            <a href="#">для компаний</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="d-flex align-items-center header__block_right">
+                    <div class="header__auth_link">
+                        <a href="./login.html">войти</a> 
+                        или
+                        <a href="./registration.html">зарегистрироваться</a>
+                    </div>
+                    <div class="change_theme">
+                        <button class="change_theme__btn btn_red">
+                            <span>сменить тему</span>
+                            <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.00004 1L4.89504 6L8.79004 1" stroke="#E92323"/>
+                            </svg>
+                        </button>
+                        <ul>
+                            <li>
+                                <button>светлая</button>
+                            </li>
+                            <li>
+                                <button class="active">тёмная</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header end -->
+        
+
+        <!-- Theory -->
+        <section class="theory">
+            <div class="d-flex align-items-stretch main_container">
+
+                <div class="theory__left">
+                    <h1 class="text-center main_title theory__title">Тема 3: Управляющие конструкции <br> 3.2. Циклы for.</h1>
+                    <div class="d-flex align-items-stretch online_trener">
+                        <img src="./images/online_trener_card.png" alt="">
+                        <div class="d-flex flex-column align-items-start">
+                            <a href="#" class="title">Онлайн-тренажер Python 3 для начинающих</a>
+                            <p class="main_description">Теория без воды. Задачи с автоматической проверкой. Подсказки на русском языке. Работает в любом современном браузере.</p>
+                            <a href="#" class="btn_red">начать бесплатно</a>
+                        </div>
+                    </div>
+                    <p class="main_description">Самоучитель Python 3, собранный из материалов данного сайта. Предназначен в основном для тех, кто хочет изучить язык программирования Python с нуля.</p>
+
+                    <iframe width="1237" height="696" src="https://www.youtube.com/embed/34Rp6KVGIEM?list=PLDyJYA6aTY1lPWXBPk0gw6gR8fEtPDGKa" title="Уроки Python с нуля / #1 – Программирование на Питон для начинающих" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    <h2 class="theme_title">Цикл while</h2>
+                    <div class="theme_description">
+                        Цикл `for` в Python используется для итерации по последовательности элементов, такой как список, кортеж, строка или любой другой итерируемый объект. Вот основные аспекты использования цикла `for`:
+                        <br><br>
+                        Простая итерация:
+                    </div>
+                    
+                    <div class="editor_wrap">
+                        <div class="d-flex align-items-center editor_top">
+                            <button class="btn_red run-code">запустить</button>
+                            <label for="main_checkbox_13" class="main_checkbox">
+                                <span>выполнить пошагово</span>
+                                <input type="checkbox" id="main_checkbox_13">
+                            </label>
+                        </div>
+                        <div class="code-editor"  style="height: 106px !important;">for элемент in последовательность:
+    # блок кода, выполняющийся для каждого элемента</div>
+                    </div>
+
+                    <p class="theme_description">Пример:</p>
+
+                    <div class="editor_wrap">
+                        <div class="d-flex align-items-center editor_top">
+                            <button class="btn_red run-code">запустить</button>
+                            <label for="main_checkbox_5" class="main_checkbox">
+                                <span>выполнить пошагово</span>
+                                <input type="checkbox" id="main_checkbox_5">
+                            </label>
+                        </div>
+                        <div class="code-editor"  style="height: 106px !important;">fruits = ["яблоко", "банан", "вишня"]
+for fruit in fruits:
+    print(fruit)</div>
+                    </div>
+                    
+                    <p class="theme_description">
+                        Использование встроенной функции `range()`:
+                        <br><br>
+                        Функция `range()` позволяет создать последовательность чисел, которую можно использовать в цикле `for`.
+                    </p>
+
+                    <div class="editor_wrap">
+                        <div class="d-flex align-items-center editor_top">
+                            <button class="btn_red run-code">запустить</button>
+                            <label for="main_checkbox_6" class="main_checkbox">
+                                <span>выполнить пошагово</span>
+                                <input type="checkbox" id="main_checkbox_6">
+                            </label>
+                        </div>
+                        <div class="code-editor"  style="height: 106px !important;">for число in range(5):
+    print(число)</div>
+                    </div>
+                    
+                    <p class="theme_description">Использование индексов и элементов одновременно:</p>
+                    
+                    <div class="editor_wrap">
+                        <div class="d-flex align-items-center editor_top">
+                            <button class="btn_red run-code">запустить</button>
+                            <label for="main_checkbox_7" class="main_checkbox">
+                                <span>выполнить пошагово</span>
+                                <input type="checkbox" id="main_checkbox_7">
+                            </label>
+                        </div>
+                        <div class="code-editor"  style="height: 106px !important;">for индекс, элемент in enumerate(последовательность):
+    # блок кода, выполняющийся для каждого индекса и элемента</div>
+                    </div>
+                    
+                    <p class="theme_descriptoin">Пример:</p>
+                    
+                    <div class="editor_wrap">
+                        <div class="d-flex align-items-center editor_top">
+                            <button class="btn_red run-code">запустить</button>
+                            <label for="main_checkbox_8" class="main_checkbox">
+                                <span>выполнить пошагово</span>
+                                <input type="checkbox" id="main_checkbox_8">
+                            </label>
+                        </div>
+                        <div class="code-editor"  style="height: 106px !important;">ffruits = ["яблоко", "банан", "вишня"]
+for index, fruit in enumerate(fruits):
+    print(index, fruit)</div>
+                    </div>
+                    
+                    <p class="theme_description">
+                        Генераторы списков:
+                        <br><br>
+                        Генераторы списков позволяют создавать списки с использованием цикла `for` в одной строке.
+                    </p>
+                    
+                    <div class="editor_wrap">
+                        <div class="d-flex align-items-center editor_top">
+                            <button class="btn_red run-code">запустить</button>
+                            <label for="main_checkbox_9" class="main_checkbox">
+                                <span>выполнить пошагово</span>
+                                <input type="checkbox" id="main_checkbox_9">
+                            </label>
+                        </div>
+                        <div class="code-editor"  style="height: 106px !important;">новый_список = [выражение for элемент in последовательность if условие]</div>
+                    </div>
+                    
+                    <p class="theme_description">Пример:</p>
+                    
+                    <div class="editor_wrap">
+                        <div class="d-flex align-items-center editor_top">
+                            <button class="btn_red run-code">запустить</button>
+                            <label for="main_checkbox_10" class="main_checkbox">
+                                <span>выполнить пошагово</span>
+                                <input type="checkbox" id="main_checkbox_10">
+                            </label>
+                        </div>
+                        <div class="code-editor"  style="height: 106px !important;">numbers = [1, 2, 3, 4, 5]
+squared_numbers = [x**2 for x in numbers if x % 2 == 0]
+print(squared_numbers)  # Выведет: [4, 16]</div>
+                    </div>
+                    
+                    <p class="theme_description">
+                        Генераторы словарей и множеств:
+                        <br> <br>
+                        Аналогично генераторы списков, можно создавать словари и множества с использованием генераторов.
+                    </p>
+                    
+                    <div class="editor_wrap">
+                        <div class="d-flex align-items-center editor_top">
+                            <button class="btn_red run-code">запустить</button>
+                            <label for="main_checkbox_11" class="main_checkbox">
+                                <span>выполнить пошагово</span>
+                                <input type="checkbox" id="main_checkbox_11">
+                            </label>
+                        </div>
+                        <div class="code-editor"  style="height: 106px !important;">новый_словарь = {ключ: значение for элемент in последовательность if условие}
+новое_множество = {выражение for элемент in последовательность if условие}</div>
+                    </div>
+
+                    <p class="theme_description">Пример:</p>
+
+                    <div class="editor_wrap">
+                        <div class="d-flex align-items-center editor_top">
+                            <button class="btn_red run-code">запустить</button>
+                            <label for="main_checkbox_12" class="main_checkbox">
+                                <span>выполнить пошагово</span>
+                                <input type="checkbox" id="main_checkbox_12">
+                            </label>
+                        </div>
+                        <div class="code-editor"  style="height: 106px !important;">names = ["Alice", "Bob", "Charlie"]
+name_lengths = {name: len(name) for name in names}
+print(name_lengths)  # Выведет: {'Alice': 5, 'Bob': 3, 'Charlie': 7}
+
+numbers = [1, 2, 3, 4, 5]
+even_squared = {x**2 for x in numbers if x % 2 == 0}
+print(even_squared)  # Выведет: {16, 4}
+</div>
+                    </div>
+
+                    <p class="theme_description">Цикл `for` является мощным инструментом в Python, который позволяет элегантно обрабатывать итерируемые объекты и создавать новые последовательности с помощью генераторов.</p>
+                    
+
+                    <div class="d-flex align-items-center justify-content-between theory__pagination">
+                        <a href="#" class="theory__pagination_prev">
+                            <<< 3.1. Условные операторы (if, elif, else).
+                        </a>
+                        <a href="#" class="theory__pagination_next">
+                            3.2. Циклы while. >>>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column theory__right">
+                    <form class="theory__search">
+                        <input type="text" placeholder="поиск">
+                        <button type="submit">
+                            <img src="./images/search_icon.png" alt="">
+                            <img src="./images/search_icon_light.png" alt="" class="light">
+                        </button>
+                    </form>
+
+                    <div class="theory__category">
+                        <h3>категории</h3>
+                        <h4>ТЕОРИЯ</h4>
+                        <ul class="d-flex flex-column parent_category">
+                            <li class="active">
+                                <a href="#">Ввод и вывод данных</a>
+                                <ul class="d-flex flex-column child_category">
+                                    <li>Сумма трёх чисел</li>
+                                    <li>Площадь прямоугольного треугольника</li>
+                                    <li>Делёж яблок</li>
+                                    <li>Электронные часы</li>
+                                    <li>Hello, Harry!</li>
+                                    <li>Следующее и предыдущее</li>
+                                    <li>Парты</li>
+                                    <li>Шнурки</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Загрузка и установка Python</a>
+                            </li>
+                            <li>
+                                <a href="#">Первая программа. Знакомство со средой разработки IDLE</a>
+                            </li>
+                            <li>
+                                <a href="#">Синтаксис</a>
+                            </li>
+                            <li>
+                                <a href="#">Почему моя программа не работает?</a>
+                            </li>
+                            <li>
+                                <a href="#">Условный оператор if</a>
+                            </li>
+                            <li>
+                                <a href="#">Циклы</a>
+                            </li>
+                            <li>
+                                <a href="#">Ключевые слова, встроенные функции</a>
+                            </li>
+                            <li>
+                                <a href="#">Числа</a>
+                            </li>
+                            <li>
+                                <a href="#">Строки (часть 1, часть 2)</a>
+                            </li>
+                            <li>
+                                <a href="#">Списки (массивы)</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="theory__category">
+                        <h3>Мы в соцсетях</h3>
+                        <ul class="d-flex align-items-center networks">
+                            <li>
+                                <a href="#">
+                                    <img src="./images/our_telegram.png" alt="">
+                                    <img src="./images/our_telegram_light.png" alt="" class="light">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/our_wiber.png" alt="">
+                                    <img src="./images/our_wiber_light.png" alt="" class="light">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/our_whatsapp.png" alt="">
+                                    <img src="./images/our_whatsapp_light.png" alt="" class="light">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Theory end -->
+
+    </div>
+    
+    <!-- Ace Code Editor kutubxonasi -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/mode-python.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/theme-twilight.js"></script>
+    <!-- Jquery JS -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- Main JS -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
+

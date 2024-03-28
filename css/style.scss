@@ -194,6 +194,13 @@ body {
     width: 100%;
     z-index: 3;
 
+    &.theory_header {
+        .main_container {
+            max-width: 1252px;
+            padding: 0 40px;
+        }
+    }
+
     &__logo {
         position: relative;
         padding-left: 68px;
@@ -834,7 +841,7 @@ body {
     .main_container {
         position: relative;
         padding: 187px 40px 126px;
-        max-width: 1352px;
+        max-width: 1252px;
         gap: 26px;
         z-index: 2;
         background: #0F0F10;
@@ -845,9 +852,22 @@ body {
         background: url('../images/theory_left_bg.png') center/cover no-repeat;
         border-radius: 5px;
         padding: 32px 45px 45px 51px;
+        position: relative;
 
         .main_description {
             font-weight: 500;
+        }
+    }
+
+    &__pagination {
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        width: 100%;
+        transform: translateY(100%);
+
+        a {
+            font-size: 14px;
         }
     }
 
@@ -987,27 +1007,58 @@ body {
             text-transform: uppercase;
         }
 
+        h4 {
+            color: #F63131;
+            font-size: 14px;
+            margin-bottom: 23px;
+            text-transform: uppercase;
+            padding-left: 20px;
+        }
+
+        .parent_category {
+            list-style-type: decimal;
+            list-style-position: inside;
+
+            ::marker {
+                display: inline;
+                margin-left: -5px;
+            }
+        }
+
         ul {
             gap: 25px;
 
             li {
-                font-size: 16px;
+                font-size: 14px;
                 padding-left: 25px;
                 position: relative;
 
-                &::before {
-                    content: '';
-                    position: absolute;
-                    width: 3px;
-                    height: 3px;
-                    left: 10.5px;
-                    border-radius: 50%;
-                    background: white;
-                    top: 11.5px;
+                a {
+                    display: inline;
+                }
+
+                &.active {
+
+                    a {
+                        text-decoration: underline; 
+                    }
                 }
 
                 img.light {
                     display: none;
+                }
+            }
+
+            .child_category {
+                background: rgba(9, 9, 9, 0.57);
+                width: calc(100% + 25px + 40px + 28px);
+                margin: 25px 0 0 -53px;
+                padding: 50px 28px;
+                gap: 15px;
+
+                li {
+                    font-size: 14px;
+
                 }
             }
         }
@@ -1023,6 +1074,73 @@ body {
             }
         }
     }
+
+    iframe {
+        width: 363px;
+        height: 243px;
+        margin: 62px 0 40px;
+    }
+
+    .theme {
+        &_title {
+            color: rgb(246, 49, 49);
+            font-size: 23px;
+            line-height: 28px;
+            margin-bottom: 24px;
+        }
+
+        &_description {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+}
+
+.editor_wrap {
+    background: linear-gradient(197.77deg, rgba(0, 0, 0, 0.53) 33.859%,rgba(3, 3, 3, 0.39) 55.165%);
+    border-radius: 5px;
+    margin: 32px 0 40px;
+    
+    .code-editor {
+        margin-top: 2px;
+    }
+
+    .main_checkbox {
+        span {
+            padding-left: 0px;
+        }
+
+        input {
+            &::before, &::after {
+                right: -20px;
+                left: auto;
+                top: 13px;
+            }
+        }
+    }
+
+    .editor_top {
+        padding: 14px 23px 13px;
+        border-bottom: 1px solid #323232;
+        gap: 25px;
+
+        .btn_red {
+            width: 79px;
+            height: 20px;
+            padding: 0;
+            font-size: 10px;
+        }
+    }
+
+    .ace-monokai {
+        background: transparent;
+
+        .ace_gutter {
+            background: transparent;
+            border: 0;
+            border-right: 1px solid #4A4A4A;
+        }
+    }
 }
 // Theory end
 
@@ -1031,7 +1149,7 @@ body {
     position: fixed;
     height: 100%;
     width: 100%;
-    background: white;
+    background: transparent;
     top: 0;
     left: 0;
     z-index: 1;
