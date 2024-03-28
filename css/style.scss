@@ -1051,15 +1051,14 @@ body {
 
             .child_category {
                 background: rgba(9, 9, 9, 0.57);
-                width: calc(100% + 25px + 40px + 28px);
-                margin: 25px 0 0 -53px;
+                width: calc(100% + 40px + 28px);
+                margin: 25px 0 0 -28px;
                 padding: 50px 28px;
                 gap: 5px;
 
                 li {
                     font-size: 14px;
                     cursor: pointer;
-                    padding-left: 25px;
 
                     a {
                         display: block;
