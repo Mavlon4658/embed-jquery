@@ -520,6 +520,15 @@ body.light-theme {
 
                 .child_category {
                     background: rgba(189, 198, 249, 0.57);
+
+                    button {
+                        color: #1E1E1E;
+
+                        &.active, &:active, &:hover, &:focus {
+                            background: linear-gradient(to right, rgba(22, 138, 221, 0.54), rgba(25, 37, 148, 0.60));
+                            color: white;
+                        }
+                    }
                 }
             }
 

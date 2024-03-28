@@ -866,19 +866,23 @@ body {
   background: rgba(9, 9, 9, 0.57);
   width: calc(100% + 40px + 28px);
   margin: 25px 0 0 -28px;
-  padding: 50px 28px;
-  gap: 5px;
+  padding: 50px 0;
+  gap: 0;
 }
 .theory__category ul .child_category li {
   font-size: 14px;
   cursor: pointer;
 }
-.theory__category ul .child_category li a {
+.theory__category ul .child_category li button {
   display: block;
   text-decoration: none;
+  color: white;
+  text-align: left;
+  padding: 10px 28px;
+  width: 100%;
 }
-.theory__category ul .child_category li a:active, .theory__category ul .child_category li a:hover {
-  color: #DE3232;
+.theory__category ul .child_category li button.active, .theory__category ul .child_category li button:active, .theory__category ul .child_category li button:hover, .theory__category ul .child_category li button:focus {
+  background: #e92323;
 }
 .theory__category .networks li {
   padding: 0;
@@ -1290,6 +1294,13 @@ body.light-theme .theory__category ul li::before {
 }
 body.light-theme .theory__category ul .child_category {
   background: rgba(189, 198, 249, 0.57);
+}
+body.light-theme .theory__category ul .child_category button {
+  color: #1E1E1E;
+}
+body.light-theme .theory__category ul .child_category button.active, body.light-theme .theory__category ul .child_category button:active, body.light-theme .theory__category ul .child_category button:hover, body.light-theme .theory__category ul .child_category button:focus {
+  background: linear-gradient(to right, rgba(22, 138, 221, 0.54), rgba(25, 37, 148, 0.6));
+  color: white;
 }
 body.light-theme .theory__category .networks li img {
   display: block;
