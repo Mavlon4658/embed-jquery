@@ -1030,7 +1030,7 @@ body {
 
             li {
                 font-size: 14px;
-                padding-left: 25px;
+                padding-left: 0;
                 position: relative;
 
                 a {
@@ -1054,10 +1054,21 @@ body {
                 width: calc(100% + 25px + 40px + 28px);
                 margin: 25px 0 0 -53px;
                 padding: 50px 28px;
-                gap: 15px;
+                gap: 5px;
 
                 li {
                     font-size: 14px;
+                    cursor: pointer;
+                    padding-left: 25px;
+
+                    a {
+                        display: block;
+                        text-decoration: none;
+
+                        &:active, &:hover {
+                            color: #DE3232;
+                        }
+                    }
 
                 }
             }

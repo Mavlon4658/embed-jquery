@@ -850,7 +850,7 @@ body {
 }
 .theory__category ul li {
   font-size: 14px;
-  padding-left: 25px;
+  padding-left: 0;
   position: relative;
 }
 .theory__category ul li a {
@@ -867,10 +867,19 @@ body {
   width: calc(100% + 25px + 40px + 28px);
   margin: 25px 0 0 -53px;
   padding: 50px 28px;
-  gap: 15px;
+  gap: 5px;
 }
 .theory__category ul .child_category li {
   font-size: 14px;
+  cursor: pointer;
+  padding-left: 25px;
+}
+.theory__category ul .child_category li a {
+  display: block;
+  text-decoration: none;
+}
+.theory__category ul .child_category li a:active, .theory__category ul .child_category li a:hover {
+  color: #DE3232;
 }
 .theory__category .networks li {
   padding: 0;
