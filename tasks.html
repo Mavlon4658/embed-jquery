@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/header_logo.svg" type="image/x-icon">
+    <title>Jquery embed</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="main_container d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center header__block_left">
+                    <a href="/" class="header__logo">
+                        <img src="./images/header_logo.svg" alt="">
+                        <img src="./images/header_logo_light.svg" alt="" class="light">
+                        <span class="d-flex flex-column header__logo_text">
+                            ЛОГОТИП
+                            <span>вашей компании</span>
+                        </span>
+                    </a>
+
+                    <ul class="d-flex align-items-center header__navs">
+                        <li>
+                            <a href="#">для преподователей</a>
+                        </li>
+                        <li>
+                            <a href="#">для компаний</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="d-flex align-items-center header__block_right">
+                    <div class="header__auth_link">
+                        <a href="./login.html">войти</a> 
+                        или
+                        <a href="./registration.html">зарегистрироваться</a>
+                    </div>
+                    <div class="change_theme">
+                        <button class="change_theme__btn btn_red">
+                            <span>сменить тему</span>
+                            <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.00004 1L4.89504 6L8.79004 1" stroke="#E92323"/>
+                            </svg>
+                        </button>
+                        <ul>
+                            <li>
+                                <button>светлая</button>
+                            </li>
+                            <li>
+                                <button class="active">тёмная</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header end -->
+    
+        <!-- Tasks -->
+        <div class="section tasks">
+            <div class="main_container">
+                <div class="tasks__left">
+                    <h3 class="title">ТЕОРИЯ И ПРАКТИКА</h3>
+                    <ul class="d-flex flex-column tasks_wrap">
+                        <li class="tasks_wrap__item">
+                            <span>Введение в Python</span>
+                            <ul class="child_tasks">
+                                <li class="child_tasks__title">Задачи</li>
+                                <li>
+                                    <button class="ended">1.1. История Python и его возможности.</button>
+                                </li>
+                                <li>
+                                    <button class="ended">1.2. Установка и настройка Python.</button>
+                                </li>
+                                <li>
+                                    <button class="ended">1.3 Установка и настройка Pycharm</button>
+                                </li>
+                                <li>
+                                    <button class="active">1.4. Запуск интерпретатора Python.</button>
+                                </li>
+                                <li>
+                                    <button>1.5. Работа с компилятором python и Pycharm.</button>
+                                </li>
+                                <li>
+                                    <button>1.6 pip</button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="tasks_wrap__item">
+                            <span>Основы программирования на Python</span>
+                            <ul class="child_tasks">
+                                <li class="child_tasks__title">Задачи</li>
+                                <li>
+                                    <button>2.1. Первая программа на Python.</button>
+                                </li>
+                                <li>
+                                    <button>2.2. Основы синтаксиса Python.</button>
+                                </li>
+                                <li>
+                                    <button>2.3. Переменные и типы данных.</button>
+                                </li>
+                                <li>
+                                    <button>2.4. Ввод и вывод данных.</button>
+                                </li>
+                                <li>
+                                    <button>2.5. Операторы и выражения.</button>
+                                </li>
+                                <li>
+                                    <button>2.6  Ключевые слова</button>
+                                </li>
+                                <li>
+                                    <button>2.7 преобразование типов</button>
+                                </li>
+                                <li>
+                                    <button>2.8 функции</button>
+                                </li>
+                                <li>
+                                    <button>2.9 конкатенация</button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="tasks_wrap__item">
+                            <span>Управляющие конструкции</span>
+                            <ul class="child_tasks">
+                                <li class="child_tasks__title">Задачи</li>
+                                <li>
+                                    <button>3.1. Условные операторы (if, elif, else).</button>
+                                </li>
+                                <li>
+                                    <button>3.2. Циклы for.</button>
+                                </li>
+                                <li>
+                                    <button>3.2. Циклы while.</button>
+                                </li>
+                                <li>
+                                    <button>3.3. Операторы break, continue.</button>
+                                </li>
+                                <li>
+                                    <button>3.4. Генераторы списков.</button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="tasks_wrap__item">
+                            <span>Структуры данных</span>
+                            <ul class="child_tasks">
+                                <li class="child_tasks__title">Задачи</li>
+                                <li>
+                                    <button>4.1. Списки (list).</button>
+                                </li>
+                                <li>
+                                    <button>4.2. Кортежи (tuple).</button>
+                                </li>
+                                <li>
+                                    <button>4.3. Строки (string).</button>
+                                </li>
+                                <li>
+                                    <button>4.4. Словари (dictionary).</button>
+                                </li>
+                                <li>
+                                    <button>4.5. Множества (set).</button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="tasks_wrap__item">
+                            <span>Функции и модули</span>
+                            <ul class="child_tasks">
+                                <li class="child_tasks__title">Задачи</li>
+                                <li>
+                                    <button>5.1. Определение и вызов функций.</button>
+                                </li>
+                                <li>
+                                    <button>5.2. Параметры функций.</button>
+                                </li>
+                                <li>
+                                    <button>5.3. Возвращаемые значения.</button>
+                                </li>
+                                <li>
+                                    <button>5.4. Работа с модулями и пакетами.</button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="tasks_wrap__item">
+                            <span>Обработка исключений</span>
+                            <ul class="child_tasks">
+                                <li class="child_tasks__title">Задачи</li>
+                                <li>
+                                    <button>6.1. Обработка и генерация исключений.</button>
+                                </li>
+                                <li>
+                                    <button>6.2. Конструкция try-except-finally.</button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="tasks_wrap__item">
+                            <span>Работа с файлами и потоками</span>
+                            <ul class="child_tasks">
+                                <li class="child_tasks__title">Задачи</li>
+                                <li>
+                                    <button>7.1. Открытие и закрытие файлов.</button>
+                                </li>
+                                <li>
+                                    <button>7.2. Чтение и запись данных в файлы.</button>
+                                </li>
+                                <li>
+                                    <button>7.3. Работа с текстовыми и бинарными файлами.</button>
+                                </li>
+                                <li>
+                                    <button>7.4. Работа с потоками ввода-вывода (I/O).</button>
+                                </li>
+                                <li>
+                                    <button>7.5 Работа с файлами exel</button>
+                                </li>
+                                <li>
+                                    <button>7.6 Работа с файлами word</button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="tasks_wrap__item">
+                            <span>файловая система</span>
+                            <ul class="child_tasks">
+                                <li class="child_tasks__title">Задачи</li>
+                                <li>
+                                    <button>8.1. Работа с папками.</button>
+                                </li>
+                                <li>
+                                    <button>8.2. Работа с файлами.</button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="tasks_wrap__item">
+                            <span>Объектно-ориентированное программирование (ООП)</span>
+                            <ul class="child_tasks">
+                                <li class="child_tasks__title">Задачи</li>
+                                <li>
+                                    <button>9.1. Классы и объекты.</button>
+                                </li>
+                                <li>
+                                    <button>9.2. Атрибуты и методы.</button>
+                                </li>
+                                <li>
+                                    <button>9.3. Наследование и полиморфизм.</button>
+                                </li>
+                                <li>
+                                    <button>9.4. Инкапсуляция.</button>
+                                </li>
+                                <li>
+                                    <button>9.5. Специальные методы классов.</button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="tasks_wrap__item">
+                            <span>Регулярные выражения</span>
+                            <ul class="child_tasks">
+                                <li class="child_tasks__title">Задачи</li>
+                                <li>
+                                    <button>10.1. Синтаксис регулярных выражений.</button>
+                                </li>
+                                <li>
+                                    <button>10.2. Использование регулярных выражений для поиска и замены текста.</button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="tasks_wrap__item">
+                            <span>Дополнительные темы</span>
+                            <ul class="child_tasks">
+                                <li class="child_tasks__title">Задачи</li>
+                                <li>
+                                    <button>11.1. Генераторы.</button>
+                                </li>
+                                <li>
+                                    <button>11.2. Декораторы.</button>
+                                </li>
+                                <li>
+                                    <button>11.3. Контекстные менеджеры.</button>
+                                </li>
+                                <li>
+                                    <button>11.4. Параллельное и асинхронное программирование.</button>
+                                </li>
+                                <li>
+                                    <button>11.5. Тестирование с помощью модулей unittest и pytest.</button>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tasks__right">
+                    <h2 class="main_title tasks__right_title"><span>Занятие 1.</span> Ввод и вывод данных</h2>
+                    <button class="btn_like active">
+                        <img src="./images/like_active.png" alt="">
+                        <img src="./images/like_active_light.png" alt="" class="light">
+                        <span>поставить лайк</span>
+                    </button>
+
+                    <h3>1. Целочисленная арифметика</h3>
+                    <p>Для целых чисел определены операции <span>+</span>, <span>-</span>, <span>*</span> и <span>**</span>. Операция деления <span>/</span> для целых чисел возвращает вещественное число (значение типа <span>float</span>). Также функция возведения в степень возвращает значение типа <span>float</span>, если показатель степени — отрицательное число.</p>
+                    <p>Но есть и специальная операция целочисленного деления, выполняющегося с отбрасыванием дробной части, которая обозначается <span>//</span> (она соответствует операции <span>div</span> в Паскале). Она возвращает целое число: целую часть частного. Другая близкая ей операция − это операция взятия остатка от деления, обозначаемая <span>%</span> (она соответствует операции <span>mod</span> в Паскале). Например:</p>
+                    <div class="editor_wrap">
+                        <div class="d-flex align-items-center editor_top">
+                            <button class="btn_red run-code">запустить</button>
+                            <label for="main_checkbox_1" class="main_checkbox">
+                                <span>выполнить пошагово</span>
+                                <input type="checkbox" id="main_checkbox_1">
+                            </label>
+                        </div>
+                        <div class="code-editor"  style="height: 106px !important;">print(17 / 3)   # выведет 5.66666666667
+print(17 // 3)  # выведет 5
+print(17 % 3)   # выведет 2</div>
+                    </div>
+                    
+                    <h3>2. Действительные числа</h3>
+                    <p>В этом разделе речь пойдет о действительных числах, имеющих тип <span>float</span>.</p>
+                    <p>Обратите внимание, что если вы хотите считать с клавиатуры действительное число, то результат, возращаемый функцией <span>input()</span> необходимо преобразовывать к типу <span>float</span>:</p>
+                    <p>Действительные (вещественные) числа представляются в виде чисел с десятичной точкой (а не запятой, как принято при записи десятичных дробей в русских текстах). Для записи очень больших или очень маленьких по модулю чисел используется так называемая запись «с плавающей точкой» (также называемая «научная» запись). В этом случае число представляется в виде некоторой десятичной дроби, называемой мантиссой, умноженной на целочисленную степень десяти (порядок). Например, расстояние от Земли до Солнца равно 1.496·10<sup>11</sup>, а масса молекулы воды 2.99·10<sup>-23</sup>.</p>
+                    <p>Числа с плавающей точкой в программах на языке Питон, а также при вводе и выводе записываются так: сначала пишется мантисса, затем пишется буква <span>e</span>, затем пишется порядок. Пробелы внутри этой записи не ставятся. Например, указанные выше константы можно записать в виде <span>1.496e11</span> и <span>2.99e-23</span>. Перед самим числом также может стоять знак минус.</p>
+                    <p>Напомним, что результатом операции деления <span>/</span> всегда является действительное число (<span>float</span>), в то время как результатом операции <span>//</span> является целое число (<span>int</span>).</p>
+                    <p>Преобразование действительных чисел к целому производится с округлением в сторону нуля, то есть <span>int(1.7) == 1</span>, <span>int(-1.7) == -1</span>.</p>
+                    
+                    <h3>3. Библиотека math</h3>
+                    <p>Для проведения вычислений с действительными числами язык Питон содержит много дополнительных функций, собранных в библиотеку (модуль), которая называется <span>math</span>.</p>
+                    <p>Для использования этих функций в начале программы необходимо подключить математическую библиотеку, что делается командой</p>
+                    <p><span>import math</span></p>
+                    <p>Например, пусть мы хотим округлять вещественные числа до ближайшего целого числа вверх. Соответствующая функция <span>ceil</span> от одного аргумента вызывается, например, так: <span>math.ceil(x)</span> (то есть явно указывается, что из модуля <span>math</span> используется функция <span>ceil</span>). Вместо числа x может быть любое число, переменная или выражение. Функция возращает значение, которое можно вывести на экран, присвоить другой переменной или использовать в выражении:</p>
+                    <div class="editor_wrap">
+                        <div class="d-flex align-items-center editor_top">
+                            <button class="btn_red run-code">запустить</button>
+                            <label for="main_checkbox_3" class="main_checkbox">
+                                <span>выполнить пошагово</span>
+                                <input type="checkbox" id="main_checkbox_3">
+                            </label>
+                        </div>
+                        <div class="code-editor"  style="height: 106px !important;">import math
+
+x = math.ceil(4.2)
+y = math.ceil(4.8)
+print(x)
+print(y)</div>
+                    </div>
+                    <p>Другой способ использовать функции из библиотеки <span>math</span>, при котором не нужно будет при каждом использовании функции из модуля <span>math</span> указывать название этого модуля, выглядит так:</p>
+                    <div class="editor_wrap">
+                        <div class="d-flex align-items-center editor_top">
+                            <button class="btn_red run-code">запустить</button>
+                            <label for="main_checkbox_4" class="main_checkbox">
+                                <span>выполнить пошагово</span>
+                                <input type="checkbox" id="main_checkbox_4">
+                            </label>
+                        </div>
+                        <div class="code-editor"  style="height: 106px !important;">from math import ceil
+
+x = 7 / 2
+y = ceil(x)
+print(y)</div>
+                    </div>
+                    <p>или так:</p>
+                    <div class="editor_wrap">
+                        <div class="d-flex align-items-center editor_top">
+                            <button class="btn_red run-code">запустить</button>
+                            <label for="main_checkbox_4" class="main_checkbox">
+                                <span>выполнить пошагово</span>
+                                <input type="checkbox" id="main_checkbox_4">
+                            </label>
+                        </div>
+                        <div class="code-editor"  style="height: 106px !important;">from math import *
+
+x = 7 / 2
+y = ceil(x)
+print(y)</div>
+                    </div>
+                    <p>Ниже приведен список основных функций модуля <span>math</span>. Более подробное описание этих функций можно найти на <a href="#">сайте с документацией языка Питон</a>.</p>
+                    <p>Некоторые из перечисленных функций (<span>int</span>, <span>round</span>, <span>abs</span>) являются стандартными и не требуют подключения модуля <span>math</span> для использования.</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Функция</td>
+                                <td>Описание</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="2">Округление</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>int(x)</span>
+                                </td>
+                                <td>Округляет число в сторону нуля. Это стандартная функция, для ее использования не нужно подключать модуль <span>math</span>.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>round(x)</span>
+                                </td>
+                                <td>Округляет число до ближайшего целого. Если дробная часть числа равна 0.5, то число округляется до ближайшего четного числа.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>round(x, n)</span>
+                                </td>
+                                <td>Округляет число <span>x</span> до <span>n</span> знаков после точки. Это стандартная функция, для ее использования не нужно подключать модуль <span>math</span>.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>floor(x)</span>
+                                </td>
+                                <td>Округляет число вниз («пол»), при этом <span>floor(1.5) == 1</span>, <span>floor(-1.5) == -2</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>ceil(x)</span>
+                                </td>
+                                <td>Округляет число вверх («потолок»), при этом <span>ceil(1.5) == 2</span>, <span>ceil(-1.5) == -1</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>abs(x)</span>
+                                </td>
+                                <td>Модуль (абсолютная величина). Это — стандартная функция.</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Корни, логарифмы</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>sqrt(x)</span>
+                                </td>
+                                <td>Квадратный корень. Использование: <span>sqrt(x)</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>log(x)</span>
+                                </td>
+                                <td>Натуральный логарифм. При вызове в виде <span>log(x, b)</span> возвращает логарифм по основанию <span>b</span>.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>e</span>
+                                </td>
+                                <td>Основание натуральных логарифмов e = 2,71828...</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Тригонометрия</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>sin(x)</span>
+                                </td>
+                                <td>Синус угла, задаваемого в радианах</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>cos(x)</span>
+                                </td>
+                                <td>Косинус угла, задаваемого в радианах</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>tan(x)</span>
+                                </td>
+                                <td>Тангенс угла, задаваемого в радианах</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>asin(x)</span>
+                                </td>
+                                <td>Арксинус, возвращает значение в радианах</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>acos(x)</span>
+                                </td>
+                                <td>Арккосинус, возвращает значение в радианах</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>atan(x)</span>
+                                </td>
+                                <td>Арктангенс, возвращает значение в радианах</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>atan2(y, x)</span>
+                                </td>
+                                <td>Полярный угол (в радианах) точки с координатами (x, y).</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>degrees(x)</span>
+                                </td>
+                                <td>Преобразует угол, заданный в радианах, в градусы.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>radians(x)</span>
+                                </td>
+                                <td>Преобразует угол, заданный в градусах, в радианы.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>pi</span>
+                                </td>
+                                <td>Константа π = 3.1415...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- Tasks end -->
+
+    </div>
+    
+    <!-- Ace Code Editor kutubxonasi -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/mode-python.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/theme-twilight.js"></script>
+    <!-- Jquery JS -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- Main JS -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
+

@@ -54,6 +54,18 @@ body.light-theme {
             border-color: #3C7EE0;
             color: #3C7EE0;
         }
+
+        &_like {
+            color: #1e1e1e;
+    
+            img {
+                display: none;
+
+                &.light {
+                    display: block;
+                }
+            }
+        }
     }
 
     // Header 
@@ -588,4 +600,74 @@ body.light-theme {
         }
     }
     // Theory end
+
+    // Tasks
+    .tasks {
+        &__left {
+            background: #D6E6FF;
+
+            .title {
+                color: #3C7EE0;
+            }
+
+            .child_tasks {
+                background: #BDC6F991;
+
+                &__title {
+                    color: #3C7EE0;
+                }
+
+                li:not(.child_tasks__title) {
+                    button {
+                        color: #1e1e1e;
+
+                        &:hover, &.active {
+                            background: linear-gradient(90.00deg, rgba(22, 137, 221, 0.54),rgba(25, 38, 148, 0.61) 100%);
+                            color: #FFF;
+                        }
+                        
+                        &.ended {
+                            background: linear-gradient(90.00deg, rgba(22, 221, 22, 0.54),rgba(25, 148, 31, 0.61) 100%);
+                            color: #FFF;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__right {
+            &_title {
+                span {
+                    color: #3c7ee0;
+                }
+            }
+
+            h3 {
+                color: #1e1e1e;
+            }
+
+            p {
+                color: #1e1e1e;
+                
+                span {
+                    color: #3c7ee0;
+                }
+
+                a {
+                    color: #3c7ee0;
+                }
+            }
+
+            table {
+                td {
+                    border: 1px solid #BABABA;
+
+                    span {
+                        color: #3c7ee0;
+                    }
+                }
+            }
+        }
+    }
+    // Tasks end
 }

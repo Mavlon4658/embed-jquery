@@ -83,4 +83,15 @@ $(document).ready(function () {
             console.log(code);
         })
     })
+
+    $('.tasks_wrap .tasks_wrap__item').each(function (idx, el) {
+        $(el).find('span').click(function () {
+            $('.tasks_wrap .child_tasks').not($(el).find('.child_tasks')).slideUp(300)
+            $(el).find('.child_tasks').slideDown(300);
+        })
+    })
+
+    $('.btn_like').click(function() {
+        $(this).toggleClass('active')
+    })
 })
