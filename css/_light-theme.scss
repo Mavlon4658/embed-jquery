@@ -93,6 +93,34 @@ body.light-theme {
             }
         }
 
+        &__navs {
+            a {
+                &.active, &:hover {
+                    color: #3C7EE0;
+                }
+            }
+        }
+
+        &__account {
+            a {
+                img {
+                    display: none;
+
+                    &.light {
+                        display: block;
+                    }
+                }
+            }
+    
+            .dagree {
+                color: #868686;
+    
+                span {
+                    color: #3C7EE0;
+                }
+            }
+        }
+
         .btn_red {
             width: 164px;
             gap: 8px;
@@ -565,6 +593,20 @@ body.light-theme {
         .editor_top {
             border-bottom: 1px solid #BABABA;
         }
+
+        .editor_head {
+            background: rgb(200, 222, 249);
+    
+            .full_screen {
+                img {
+                    display: none;
+
+                    &.light {
+                        display: block;
+                    }
+                }
+            }
+        }
     
         .ace-monokai {
             background: transparent;
@@ -670,4 +712,121 @@ body.light-theme {
         }
     }
     // Tasks end
+
+    // Task one
+    .task_one {
+        &__navs {
+            background: rgba(209, 233, 255, 0.66);
+            border: 1px solid rgba(100, 100, 100, 0.22);
+
+            &_length {
+                &__item {
+                    .tr_number {
+                        color: #676666;
+                    }
+
+                    &::before {
+                        background: rgba(100, 100, 100, 0.22);
+                    }
+                }
+
+            }
+
+            .less {
+                &__title {
+                    color: #3C7EE0;
+                }
+
+                button {
+                    color: #1e1e1e;
+                    width: 100%;
+                    padding: 7.5px;
+
+                    &:hover, &.active {
+                        background: linear-gradient(90.00deg, rgb(22, 90, 221),rgb(24, 152, 224) 100%);
+                        color: #FFF;
+                    }
+                    
+                    &.ended {
+                        background: linear-gradient(90.00deg, rgba(22, 221, 22, 0.54),rgba(25, 148, 31, 0.61) 100%);
+                        color: #FFF;
+                    }
+                }
+            }
+
+            &.active {
+                background: rgba(209, 233, 255);
+            }
+        }
+
+        .main_title {
+            span {
+                color: rgb(60, 126, 224);
+            }
+        }
+
+        .subtitle {
+            color: #868686;
+
+            span {
+                color: #3C7EE0;
+            }
+        }
+
+        &__head {
+            .btn_like {
+                color: #868686;
+            }
+
+            a {
+                color: #868686;
+
+                img {
+                    display: none;
+
+                    &.light {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        &__content {
+            &_left {
+                background: rgba(214, 230, 255, 0.77);
+
+                .code {
+                    background: #fff;
+                    color: #5F5F5F;
+                }
+            }
+        }
+
+        .solution {
+            &_head {
+                button {
+                    background: linear-gradient(180.00deg, rgb(78, 144, 242),rgb(24, 114, 178) 100%);
+                    box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.25);
+                    border: 0;
+                }
+            }
+
+            &_test {
+                table {
+                    width: 100%;
+                    
+                    td {
+                        border-top: 1px solid #959595;
+                    }
+
+                    button {
+                        background: transparent;
+                        color: #3C7EE0;
+                        border: 1px solid #3C7EE0;
+                    }
+                }
+            }
+        }
+    }
+    // Task one end
 }
