@@ -2043,4 +2043,32 @@ body.light-theme .task_one .solution_test table button {
   background: transparent;
   color: #3C7EE0;
   border: 1px solid #3C7EE0;
+}
+body.light-theme .teacher_office__head_left .btn_white {
+  background: linear-gradient(to right, #3C7EE0, #21457A);
+  color: white;
+}
+body.light-theme .teacher_office__links .btn_white {
+  color: #3C7EE0;
+  border-color: #3C7EE0;
+}
+body.light-theme .teacher_office__table table td {
+  border: 1px solid #929292;
+  background: #D8E7FF;
+  color: #3B3B3B;
+}
+body.light-theme .teacher_office__table table td.ended {
+  background: #88E368;
+  color: #fff;
+}
+body.light-theme .teacher_office__table table td.active {
+  background: #E92323;
+  color: #fff;
+}
+body.light-theme .teacher_office__table table td:nth-child(2) {
+  text-align: left;
+  padding: 0 14px;
+}
+body.light-theme .teacher_office__table table td:first-child {
+  background: #DFECFF;
 }/*# sourceMappingURL=style.css.map */

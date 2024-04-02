@@ -829,4 +829,54 @@ body.light-theme {
         }
     }
     // Task one end
+
+    // Teacher office
+    .teacher_office {
+        &__head {
+
+            &_left {
+                .btn_white {
+                    background: linear-gradient(to right, #3C7EE0, #21457A);
+                    color: white;
+                }
+            }
+        }
+
+        &__links {
+            .btn_white {
+                color: #3C7EE0;
+                border-color: #3C7EE0;
+            }
+        }
+
+        &__table {
+            table {
+                td {
+                    border: 1px solid #929292;
+                    background: #D8E7FF;
+                    color: #3B3B3B;
+
+                    &.ended {
+                        background: #88E368;
+                        color: #fff;
+                    }
+
+                    &.active {
+                        background: #E92323;
+                        color: #fff;
+                    }
+        
+                    &:nth-child(2) {
+                        text-align: left;
+                        padding: 0 14px;
+                    }
+
+                    &:first-child {
+                        background: #DFECFF;
+                    }
+                }
+            }
+        }
+    }
+    // Teacher office end
 }
