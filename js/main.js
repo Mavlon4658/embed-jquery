@@ -121,6 +121,18 @@ $(document).ready(function () {
     $('.task_one__navs').hover(
         function () {
             $('.task_one__navs').addClass('active')
+            $('.task_one__navs_length__item').each(function (idx, el) {
+                let t = false;
+
+                $(el).find('.less_list button').each(function (btn_idx, btn_el) {
+                    if ($(btn_el).hasClass('active')) {
+                        t = true;
+                    }
+                })
+                if (t) {
+                    $(el).find('.less_list').slideDown(300);
+                }
+            })
         },
         function () {
             $('.task_one__navs').removeClass('active')
