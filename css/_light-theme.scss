@@ -723,6 +723,10 @@ body.light-theme {
                 &__item {
                     .tr_number {
                         color: #676666;
+
+                        &.active {
+                            color: #3C7EE0;
+                        }
                     }
 
                     &::before {

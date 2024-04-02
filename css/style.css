@@ -1978,6 +1978,9 @@ body.light-theme .task_one__navs {
 body.light-theme .task_one__navs_length__item .tr_number {
   color: #676666;
 }
+body.light-theme .task_one__navs_length__item .tr_number.active {
+  color: #3C7EE0;
+}
 body.light-theme .task_one__navs_length__item::before {
   background: rgba(100, 100, 100, 0.22);
 }
