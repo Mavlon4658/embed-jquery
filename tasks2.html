@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/header_logo.svg" type="image/x-icon">
+    <title>Jquery embed</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="main_container d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center header__block_left">
+                    <a href="/" class="header__logo">
+                        <img src="./images/header_logo.svg" alt="">
+                        <img src="./images/header_logo_light.svg" alt="" class="light">
+                        <span class="d-flex flex-column header__logo_text">
+                            ЛОГОТИП
+                            <span>вашей компании</span>
+                        </span>
+                    </a>
+
+                    <ul class="d-flex align-items-center header__navs">
+                        <li>
+                            <a href="#">практика</a>
+                        </li>
+                        <li>
+                            <a href="#" class="active">теория</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="d-flex align-items-center header__block_right">
+                    <div class="d-flex align-items-center header__account">
+                        <a href="#" class="d-flex align-items-center">
+                            <img src="./images/code_icon.png" alt="">
+                            <img src="./images/code_icon_light.png" alt="" class="light">
+                            <span>Nik@User2024</span>
+                        </a>
+                        <span class="d-flex align-items-center dagree">
+                            Уровень:
+                            <span>1</span>
+                        </span>
+                    </div>
+                    <!-- <div class="header__auth_link">
+                        <a href="./login.html">войти</a> 
+                        или
+                        <a href="./registration.html">зарегистрироваться</a>
+                    </div> -->
+                    <div class="change_theme">
+                        <button class="change_theme__btn btn_red">
+                            <span>сменить тему</span>
+                            <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.00004 1L4.89504 6L8.79004 1" stroke="#E92323"/>
+                            </svg>
+                        </button>
+                        <ul>
+                            <li>
+                                <button>светлая</button>
+                            </li>
+                            <li>
+                                <button class="active">тёмная</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header end -->
+    
+        <!-- Tasks -->
+        <div class="section tasks">
+            <div class="main_container">
+                <div class="tasks__left">
+                    <h3 class="title">ТЕОРИЯ И ПРАКТИКА</h3>
+                    <ul class="d-flex flex-column tasks_wrap">
+                        <li class="tasks_wrap__item">
+                            <span>Введение в Python</span>
+                            <ul class="child_tasks">
+                                <li class="child_tasks__title">Задачи</li>
+                                <li>
+                                    <button class="ended">1.1. История Python и его возможности.</button>
+                                </li>
+                                <li>
+                                    <button class="ended">1.2. Установка и настройка Python.</button>
+                                </li>
+                                <li>
+                                    <button class="ended">1.3 Установка и настройка Pycharm</button>
+                                </li>
+                                <li>
+                                    <button class="active">1.4. Запуск интерпретатора Python.</button>
+                                </li>
+                                <li>
+                                    <button>1.5. Работа с компилятором python и Pycharm.</button>
+                                </li>
+                                <li>
+                                    <button>1.6 pip</button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="tasks_wrap__item">
+                            <span>Основы программирования на Python</span>
+                            <ul class="child_tasks">
+                                <li class="child_tasks__title">Задачи</li>
+                                <li>
+                                    <button>2.1. Первая программа на Python.</button>
+                                </li>
+                                <li>
+                                    <button>2.2. Основы синтаксиса Python.</button>
+                                </li>
+                                <li>
+                                    <button>2.3. Переменные и типы данных.</button>
+                                </li>
+                                <li>
+                                    <button>2.4. Ввод и вывод данных.</button>
+                                </li>
+                                <li>
+                                    <button>2.5. Операторы и выражения.</button>
+                                </li>
+                                <li>
+                                    <button>2.6  Ключевые слова</button>
+                                </li>
+                                <li>
+                                    <button>2.7 преобразование типов</button>
+                                </li>
+                                <li>
+                                    <button>2.8 функции</button>
+                                </li>
+                                <li>
+                                    <button>2.9 конкатенация</button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="tasks_wrap__item">
+                            <span>Управляющие конструкции</span>
+                            <ul class="child_tasks">
+                                <li class="child_tasks__title">Задачи</li>
+                                <li>
+                                    <button>3.1. Условные операторы (if, elif, else).</button>
+                                </li>
+                                <li>
+                                    <button>3.2. Циклы for.</button>
+                                </li>
+                                <li>
+                                    <button>3.2. Циклы while.</button>
+                                </li>
+                                <li>
+                                    <button>3.3. Операторы break, continue.</button>
+                                </li>
+                                <li>
+                                    <button>3.4. Генераторы списков.</button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="tasks_wrap__item">
+                            <span>Структуры данных</span>
+                            <ul class="child_tasks">
+                                <li class="child_tasks__title">Задачи</li>
+                                <li>
+                                    <button>4.1. Списки (list).</button>
+                                </li>
+                                <li>
+                                    <button>4.2. Кортежи (tuple).</button>
+                                </li>
+                                <li>
+                                    <button>4.3. Строки (string).</button>
+                                </li>
+                                <li>
+                                    <button>4.4. Словари (dictionary).</button>
+                                </li>
+                                <li>
+                                    <button>4.5. Множества (set).</button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="tasks_wrap__item">
+                            <span>Функции и модули</span>
+                            <ul class="child_tasks">
+                                <li class="child_tasks__title">Задачи</li>
+                                <li>
+                                    <button>5.1. Определение и вызов функций.</button>
+                                </li>
+                                <li>
+                                    <button>5.2. Параметры функций.</button>
+                                </li>
+                                <li>
+                                    <button>5.3. Возвращаемые значения.</button>
+                                </li>
+                                <li>
+                                    <button>5.4. Работа с модулями и пакетами.</button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="tasks_wrap__item">
+                            <span>Обработка исключений</span>
+                            <ul class="child_tasks">
+                                <li class="child_tasks__title">Задачи</li>
+                                <li>
+                                    <button>6.1. Обработка и генерация исключений.</button>
+                                </li>
+                                <li>
+                                    <button>6.2. Конструкция try-except-finally.</button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="tasks_wrap__item">
+                            <span>Работа с файлами и потоками</span>
+                            <ul class="child_tasks">
+                                <li class="child_tasks__title">Задачи</li>
+                                <li>
+                                    <button>7.1. Открытие и закрытие файлов.</button>
+                                </li>
+                                <li>
+                                    <button>7.2. Чтение и запись данных в файлы.</button>
+                                </li>
+                                <li>
+                                    <button>7.3. Работа с текстовыми и бинарными файлами.</button>
+                                </li>
+                                <li>
+                                    <button>7.4. Работа с потоками ввода-вывода (I/O).</button>
+                                </li>
+                                <li>
+                                    <button>7.5 Работа с файлами exel</button>
+                                </li>
+                                <li>
+                                    <button>7.6 Работа с файлами word</button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="tasks_wrap__item">
+                            <span>файловая система</span>
+                            <ul class="child_tasks">
+                                <li class="child_tasks__title">Задачи</li>
+                                <li>
+                                    <button>8.1. Работа с папками.</button>
+                                </li>
+                                <li>
+                                    <button>8.2. Работа с файлами.</button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="tasks_wrap__item">
+                            <span>Объектно-ориентированное программирование (ООП)</span>
+                            <ul class="child_tasks">
+                                <li class="child_tasks__title">Задачи</li>
+                                <li>
+                                    <button>9.1. Классы и объекты.</button>
+                                </li>
+                                <li>
+                                    <button>9.2. Атрибуты и методы.</button>
+                                </li>
+                                <li>
+                                    <button>9.3. Наследование и полиморфизм.</button>
+                                </li>
+                                <li>
+                                    <button>9.4. Инкапсуляция.</button>
+                                </li>
+                                <li>
+                                    <button>9.5. Специальные методы классов.</button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="tasks_wrap__item">
+                            <span>Регулярные выражения</span>
+                            <ul class="child_tasks">
+                                <li class="child_tasks__title">Задачи</li>
+                                <li>
+                                    <button>10.1. Синтаксис регулярных выражений.</button>
+                                </li>
+                                <li>
+                                    <button>10.2. Использование регулярных выражений для поиска и замены текста.</button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="tasks_wrap__item">
+                            <span>Дополнительные темы</span>
+                            <ul class="child_tasks">
+                                <li class="child_tasks__title">Задачи</li>
+                                <li>
+                                    <button>11.1. Генераторы.</button>
+                                </li>
+                                <li>
+                                    <button>11.2. Декораторы.</button>
+                                </li>
+                                <li>
+                                    <button>11.3. Контекстные менеджеры.</button>
+                                </li>
+                                <li>
+                                    <button>11.4. Параллельное и асинхронное программирование.</button>
+                                </li>
+                                <li>
+                                    <button>11.5. Тестирование с помощью модулей unittest и pytest.</button>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tasks__right">
+                    
+                    <div class="d-flex align-items-center tasks__title">
+                        <img src="./images/task_title_icon_1.png" alt="">
+                        <img src="./images/task_title_icon_1_light.png" alt="" class="light">
+                        <span>ЗАДАЧИ</span>
+                    </div>
+
+                    <div class="d-flex align-items-center tasks_rating">
+                        <div class="d-flex flex-column tasks_rating__left">
+                            <div class="d-flex justify-content-between align-items-center rating_line">
+                                <span class="rating_line__bg" style="width: 35%;"></span>
+                                <span class="value">35%</span>
+                                <span class="key">Решённые задачи</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center rating_line">
+                                <span class="rating_line__bg" style="width: 35%;"></span>
+                                <span class="value">35%</span>
+                                <span class="key">Решённые задачи</span>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column tasks_rating__right">
+                            <div class="d-flex justify-content-between align-items-center rating_line">
+                                <span class="rating_line__bg" style="width: 35%;"></span>
+                                <span class="value">
+                                    324
+                                    <img src="./images/rating_icon_1.png" alt="">
+                                </span>
+                                <span class="key">Публикации</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center rating_line">
+                                <span class="rating_line__bg" style="width: 35%;"></span>
+                                <span class="value">
+                                    543
+                                    <img src="./images/rating_icon_2.png" alt="">
+                                </span>
+                                <span class="key">Лайки</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center tasks__title">
+                        <img src="./images/task_title_icon_2.png" alt="">
+                        <img src="./images/task_title_icon_2_light.png" alt="" class="light">
+                        <span>Прогресс по темам</span>
+                    </div>
+                    <ul class="d-flex flex-wrap align-items-stretch theme_cards">
+                        <li class="theme_cards__item">
+                            <h3>
+                                Тема: <span>Условный оператор if</span>
+                            </h3>
+                            <h4>Процент выполненных задач</h4>
+                            <div class="d-flex justify-content-between align-items-center rating_line">
+                                <span class="rating_line__bg" style="width: 25%;"></span>
+                                <span class="value">25%</span>
+                            </div>
+                        </li>
+                        <li class="theme_cards__item">
+                            <h3>
+                                Тема: <span>Условный оператор if</span>
+                            </h3>
+                            <h4>Процент выполненных задач</h4>
+                            <div class="d-flex justify-content-between align-items-center rating_line">
+                                <span class="rating_line__bg" style="width: 25%;"></span>
+                                <span class="value">25%</span>
+                            </div>
+                        </li>
+                        <li class="theme_cards__item">
+                            <h3>
+                                Тема: <span>Условный оператор if</span>
+                            </h3>
+                            <h4>Процент выполненных задач</h4>
+                            <div class="d-flex justify-content-between align-items-center rating_line">
+                                <span class="rating_line__bg" style="width: 25%;"></span>
+                                <span class="value">25%</span>
+                            </div>
+                        </li>
+                        <li class="theme_cards__item">
+                            <h3>
+                                Тема: <span>Условный оператор if</span>
+                            </h3>
+                            <h4>Процент выполненных задач</h4>
+                            <div class="d-flex justify-content-between align-items-center rating_line">
+                                <span class="rating_line__bg" style="width: 25%;"></span>
+                                <span class="value">25%</span>
+                            </div>
+                        </li>
+                        <li class="theme_cards__item">
+                            <h3>
+                                Тема: <span>Условный оператор if</span>
+                            </h3>
+                            <h4>Процент выполненных задач</h4>
+                            <div class="d-flex justify-content-between align-items-center rating_line">
+                                <span class="rating_line__bg" style="width: 25%;"></span>
+                                <span class="value">25%</span>
+                            </div>
+                        </li>
+                        <li class="theme_cards__item">
+                            <h3>
+                                Тема: <span>Условный оператор if</span>
+                            </h3>
+                            <h4>Процент выполненных задач</h4>
+                            <div class="d-flex justify-content-between align-items-center rating_line">
+                                <span class="rating_line__bg" style="width: 25%;"></span>
+                                <span class="value">25%</span>
+                            </div>
+                        </li>
+                        <li class="theme_cards__item">
+                            <h3>
+                                Тема: <span>Условный оператор if</span>
+                            </h3>
+                            <h4>Процент выполненных задач</h4>
+                            <div class="d-flex justify-content-between align-items-center rating_line">
+                                <span class="rating_line__bg" style="width: 25%;"></span>
+                                <span class="value">25%</span>
+                            </div>
+                        </li>
+                        <li class="theme_cards__item">
+                            <h3>
+                                Тема: <span>Условный оператор if</span>
+                            </h3>
+                            <h4>Процент выполненных задач</h4>
+                            <div class="d-flex justify-content-between align-items-center rating_line">
+                                <span class="rating_line__bg" style="width: 25%;"></span>
+                                <span class="value">25%</span>
+                            </div>
+                        </li>
+                        <li class="theme_cards__item">
+                            <h3>
+                                Тема: <span>Условный оператор if</span>
+                            </h3>
+                            <h4>Процент выполненных задач</h4>
+                            <div class="d-flex justify-content-between align-items-center rating_line">
+                                <span class="rating_line__bg" style="width: 25%;"></span>
+                                <span class="value">25%</span>
+                            </div>
+                        </li>
+                        <li class="theme_cards__item">
+                            <h3>
+                                Тема: <span>Условный оператор if</span>
+                            </h3>
+                            <h4>Процент выполненных задач</h4>
+                            <div class="d-flex justify-content-between align-items-center rating_line">
+                                <span class="rating_line__bg" style="width: 25%;"></span>
+                                <span class="value">25%</span>
+                            </div>
+                        </li>
+                        <li class="theme_cards__item">
+                            <h3>
+                                Тема: <span>Условный оператор if</span>
+                            </h3>
+                            <h4>Процент выполненных задач</h4>
+                            <div class="d-flex justify-content-between align-items-center rating_line">
+                                <span class="rating_line__bg" style="width: 25%;"></span>
+                                <span class="value">25%</span>
+                            </div>
+                        </li>
+                        <li class="theme_cards__item">
+                            <h3>
+                                Тема: <span>Условный оператор if</span>
+                            </h3>
+                            <h4>Процент выполненных задач</h4>
+                            <div class="d-flex justify-content-between align-items-center rating_line">
+                                <span class="rating_line__bg" style="width: 25%;"></span>
+                                <span class="value">25%</span>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex align-items-start justify-content-between tasks_level">
+                        <div class="tasks_level__left">
+                            <h4 class="d-flex align-items-center">
+                                <img src="./images/level_icon.png" alt="">
+                                <img src="./images/level_icon_light.png" alt="" class="light">
+                                <span>Уровень сложности решенных задач</span>
+                            </h4>
+                            <ul class="d-flex flex-column">
+                                <li class="d-flex align-items-center">
+                                    <h5>Лёгкие</h5>
+                                    <div class="d-flex justify-content-between align-items-center rating_line">
+                                        <span class="rating_line__bg" style="width: 35%;"></span>
+                                        <span class="value">35%</span>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <h5>Средние</h5>
+                                    <div class="d-flex justify-content-between align-items-center rating_line">
+                                        <span class="rating_line__bg" style="width: 18%;"></span>
+                                        <span class="value">18%</span>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <h5>Сложные</h5>
+                                    <div class="d-flex justify-content-between align-items-center rating_line">
+                                        <span class="rating_line__bg" style="width: 45%;"></span>
+                                        <span class="value">45%</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tasks_level__right">
+                            <h3>уровень пользователя</h3>
+
+                            <div class="circle_progress">
+                                <div role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="3" style="--value:33"></div>
+                                <div class="level_value">
+                                    <span>1</span>
+                                    УРОВЕНЬ
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Tasks end -->
+
+    </div>
+    
+    <!-- Ace Code Editor kutubxonasi -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/mode-python.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/theme-twilight.js"></script>
+    <!-- Jquery JS -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- Main JS -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
+

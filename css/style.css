@@ -1154,6 +1154,166 @@ body {
 .tasks__right table thead td {
   font-weight: 600;
 }
+.tasks__title {
+  gap: 11px;
+  margin-bottom: 38px;
+}
+.tasks__title img.light {
+  display: none;
+}
+.tasks__title span {
+  color: #F63131;
+  font-size: 14px;
+  font-weight: bold;
+}
+.tasks_rating {
+  border-radius: 5px;
+  gap: 40px;
+  margin-bottom: 34px;
+}
+.tasks_rating__left, .tasks_rating__right {
+  padding: 19px 16px 21px;
+  border-radius: 5px;
+  gap: 15px;
+  width: calc(50% - 20px);
+  background: linear-gradient(197.77deg, rgba(113, 113, 113, 0.14) 33.095%, rgba(86, 86, 86, 0.18) 55.376%);
+}
+.tasks .rating_line {
+  position: relative;
+  height: 23px;
+  background: rgba(74, 74, 74, 0.58);
+  border-radius: 5px;
+  padding: 0 10px 0 14px;
+  font-size: 10px;
+  font-weight: 500;
+}
+.tasks .rating_line__bg {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, rgba(255, 49, 49, 0.58), rgba(174, 8, 8, 0.58) 100%);
+  border-radius: 5px;
+}
+.tasks .rating_line .value {
+  position: relative;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.tasks .rating_line .key {
+  position: relative;
+  color: #959595;
+}
+.tasks .theme_cards {
+  gap: 18px 17px;
+  margin-bottom: 36px;
+}
+.tasks .theme_cards__item {
+  width: 270px;
+  border-radius: 5px;
+  padding: 10px 12px 16px 11px;
+  background: linear-gradient(197.77deg, rgba(62, 61, 61, 0.14) 29.286%, rgba(48, 47, 47, 0.18) 56.433%);
+}
+.tasks .theme_cards__item h3 {
+  color: #9F9F9F;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 9px;
+}
+.tasks .theme_cards__item h3 span {
+  color: #FF3A3A;
+}
+.tasks .theme_cards__item h4 {
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+.tasks_level {
+  padding-right: 50px;
+}
+.tasks_level h4 {
+  gap: 18px;
+  margin-bottom: 36px;
+}
+.tasks_level h4 img.light {
+  display: none;
+}
+.tasks_level h4 span {
+  color: #F63131;
+  font-size: 14px;
+  font-weight: bold;
+}
+.tasks_level ul {
+  width: 490px;
+  gap: 11px;
+}
+.tasks_level ul li h5 {
+  width: 82px;
+  color: #9F9F9F;
+  font-size: 13px;
+}
+.tasks_level ul li .rating_line {
+  width: calc(100% - 82px);
+}
+.tasks_level__right h3 {
+  color: #D8D8D8;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 36px;
+}
+.tasks_level__right .circle_progress {
+  position: relative;
+}
+@keyframes growProgressBar {
+  0%, 33% {
+    --pgPercentage: 0;
+  }
+  100% {
+    --pgPercentage: var(--value);
+  }
+}
+@property --pgPercentage {
+  .tasks_level__right .circle_progress {
+    syntax: "<number>";
+    inherits: false;
+    initial-value: 0;
+  }
+}
+.tasks_level__right .circle_progress div[role=progressbar] {
+  --size: 166px;
+  --fg: #F63131;
+  --bg: rgba(74, 74, 74, 0.58);
+  --pgPercentage: var(--value);
+  animation: growProgressBar 0s 1 forwards;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(closest-side, #0F0F10 75%, transparent 0 99.9%, #0F0F10 0), conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: calc(var(--size) / 5);
+  color: var(--fg);
+}
+.tasks_level__right .circle_progress div[role=progressbar]::before {
+  counter-reset: percentage var(--value);
+}
+.tasks_level__right .circle_progress .level_value {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -65%);
+  text-align: center;
+  font-size: 12px;
+}
+.tasks_level__right .circle_progress .level_value span {
+  color: #F63131;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8.66px;
+  display: block;
+}
 
 .task_one .main_container {
   max-width: calc(100vw - 200px);
@@ -1970,6 +2130,91 @@ body.light-theme .tasks__right table td {
 }
 body.light-theme .tasks__right table td span {
   color: #3c7ee0;
+}
+body.light-theme .tasks__title img {
+  display: none;
+}
+body.light-theme .tasks__title img.light {
+  display: block;
+}
+body.light-theme .tasks__title span {
+  color: #3C7EE0;
+}
+body.light-theme .tasks_rating__left, body.light-theme .tasks_rating__right {
+  background: rgba(214, 230, 255, 0.77);
+}
+body.light-theme .tasks .rating_line {
+  background: #fff;
+}
+body.light-theme .tasks .rating_line__bg {
+  background: #6AA4FB;
+}
+body.light-theme .tasks .rating_line .key {
+  color: #4E4E4E;
+}
+body.light-theme .tasks .theme_cards__item {
+  background: rgba(214, 230, 255, 0.77);
+}
+body.light-theme .tasks .theme_cards__item h3 {
+  color: #6F6F6F;
+}
+body.light-theme .tasks .theme_cards__item h3 span {
+  color: #004CBE;
+}
+body.light-theme .tasks_level h4 img {
+  display: none;
+}
+body.light-theme .tasks_level h4 img.light {
+  display: block;
+}
+body.light-theme .tasks_level h4 span {
+  color: #3C7EE0;
+}
+body.light-theme .tasks_level ul li h5 {
+  color: #2E2E2E;
+}
+body.light-theme .tasks_level__right h3 {
+  color: #3C7EE0;
+}
+body.light-theme .tasks_level__right .circle_progress {
+  position: relative;
+}
+@keyframes growProgressBar {
+  0%, 33% {
+    --pgPercentage: 0;
+  }
+  100% {
+    --pgPercentage: var(--value);
+  }
+}
+@property --pgPercentage {
+  body.light-theme .tasks_level__right .circle_progress {
+    syntax: "<number>";
+    inherits: false;
+    initial-value: 0;
+  }
+}
+body.light-theme .tasks_level__right .circle_progress div[role=progressbar] {
+  --size: 166px;
+  --fg: #3C7EE0;
+  --bg: rgba(160, 160, 160, 0.58);
+  --pgPercentage: var(--value);
+  animation: growProgressBar 0s 1 forwards;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(closest-side, #FFFFFF 75%, transparent 0 99.9%, #FFFFFF 0), conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: calc(var(--size) / 5);
+  color: var(--fg);
+}
+body.light-theme .tasks_level__right .circle_progress div[role=progressbar]::before {
+  counter-reset: percentage var(--value);
+}
+body.light-theme .tasks_level__right .circle_progress .level_value span {
+  color: #3C7EE0;
 }
 body.light-theme .task_one__navs {
   background: rgba(209, 233, 255, 0.66);

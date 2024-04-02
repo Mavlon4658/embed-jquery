@@ -710,6 +710,132 @@ body.light-theme {
                 }
             }
         }
+
+        &__title {
+    
+            img {
+                display: none;
+
+                &.light {
+                    display: block;
+                }
+            }
+    
+            span {
+                color: #3C7EE0;
+            }
+        }
+    
+        &_rating {
+            &__left,
+            &__right {
+                background: rgba(214, 230, 255, 0.77);
+            }
+        }
+    
+        .rating_line {
+            background: #fff;
+    
+            &__bg {
+                background: #6AA4FB;
+            }
+    
+            .key {
+                color: #4E4E4E;
+            }
+        }
+    
+        .theme_cards {
+            &__item {
+                background: rgba(214, 230, 255, 0.77);
+    
+                h3 {
+                    color: #6F6F6F;
+    
+                    span {
+                        color: #004CBE;
+                    }
+                }
+            }
+        }
+    
+        &_level {
+            h4 {
+                
+                img {
+                    display: none;
+
+                    &.light {
+                        display: block;
+                    }
+                }
+    
+                span {
+                    color: #3C7EE0;
+                }
+            }
+    
+    
+            ul {
+                li {
+                    h5 {
+                        color: #2E2E2E;
+                    }
+                }
+            }
+    
+            &__right {
+                h3 {
+                    color: #3C7EE0;
+                }
+    
+                .circle_progress {
+                    position: relative;
+    
+                    @keyframes growProgressBar {
+                        0%, 33% { --pgPercentage: 0; }
+                        100% { --pgPercentage: var(--value); }
+                    }
+                    
+                    @property --pgPercentage {
+                        syntax: '<number>';
+                        inherits: false;
+                        initial-value: 0;
+                    }
+                    
+                    div[role="progressbar"] {
+                        --size: 166px;
+                        --fg: #3C7EE0;
+                        --bg: rgba(160, 160, 160, 0.58);
+                        --pgPercentage: var(--value);
+                        animation: growProgressBar 0s 1 forwards;
+                        width: var(--size);
+                        height: var(--size);
+                        border-radius: 50%;
+                        display: grid;
+                        place-items: center;
+                        background: 
+                            radial-gradient(closest-side, #FFFFFF 75%, transparent 0 99.9%, #FFFFFF 0),
+                            conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+                        font-family: Helvetica, Arial, sans-serif;
+                        font-size: calc(var(--size) / 5);
+                        color: var(--fg);
+                    }
+                    
+                    div[role="progressbar"]::before {
+                        counter-reset: percentage var(--value);
+                    }
+    
+                    .level_value {
+                        span {
+                            color: #3C7EE0;
+                        }
+                    }
+                }
+    
+    
+            }
+        }
     }
     // Tasks end
 
