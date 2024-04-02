@@ -1009,4 +1009,119 @@ body.light-theme {
         }
     }
     // Teacher office end
+
+    // My class
+    .my_class {
+        &__content {
+            background: rgba(214, 230, 255, 0.77);
+
+            &_head {
+                &::after {
+                    background: #AEAEAE;
+                    box-shadow: none;
+                }
+
+                .search {
+                    input {
+                        border: 0;
+                        color: #6F6F6F;
+                        background-color: white;
+
+                        &::placeholder {
+                            color: #6F6F6F;
+                        }
+                    }
+                    
+                    &__icon {
+                        img {
+                            display: none;
+
+                            &.light {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+
+                .select {
+                    select {
+                        border: 0;
+                        background: #fff;
+                        color: #6F6F6F;
+        
+                        option {
+                            background: #6F6F6F;
+                            background-color: white;
+                        }
+                    }
+
+
+                    img {
+                        display: none;
+                        z-index: 1;
+
+                        &.light {
+                            display: block;
+                        }
+                    }
+                }
+
+                .btn_red {
+                    background: transparent !important;
+                    border: 1px solid #3C7EE0;
+                    color: #3C7EE0;
+                }
+            }
+
+            &_body {
+                li {
+                    a {
+                        background: #6099EF;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    // My class end
+
+    // Add class modal 
+    .add_class {
+        &__content {
+            background: #D6E6FF;
+
+            .main_checkbox {
+                input {
+                    &::before {
+                        background: #ADADAD;
+                        color: #FFF;
+                        border: 0;
+                    }
+
+                    &::after {
+                        color: #FFF;
+                    }
+                }
+            }
+
+            .form_control {
+
+                input {
+                    border: 0;
+                    background: #FFF;
+                    color: #2A2A2A;
+                }
+            }
+
+            .btns {
+                button {
+                    background: transparent;
+                    border: 1px solid #3C7EE0;
+                    color: #3C7EE0;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    // Add class modal end
 }

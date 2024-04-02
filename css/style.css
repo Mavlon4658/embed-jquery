@@ -298,6 +298,9 @@ body {
 .header_task .main_container {
   max-width: calc(100vw - 200px);
 }
+.header__my_class .main_container {
+  max-width: 1365px;
+}
 
 .home {
   position: relative;
@@ -1673,6 +1676,198 @@ body {
   border-bottom: 0;
 }
 
+.my_class {
+  padding: 172px 0 66px;
+  min-height: 100vh;
+}
+.my_class .main_container {
+  max-width: 1365px;
+}
+.my_class__content {
+  background: rgba(35, 35, 35, 0.66);
+  border-radius: 5px;
+}
+.my_class__content_head {
+  padding: 36px 98px;
+  position: relative;
+}
+.my_class__content_head::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #2A2828;
+  box-shadow: 0 4px 3px #0B0B0B;
+}
+.my_class__content_head .my_class__form {
+  gap: 36px;
+}
+.my_class__content_head .search {
+  position: relative;
+}
+.my_class__content_head .search input {
+  border: 1px solid #666666;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 600;
+  width: 255px;
+  border-radius: 5px;
+  padding: 13px 50px 13px 20px;
+}
+.my_class__content_head .search input::-moz-placeholder {
+  color: #fff;
+}
+.my_class__content_head .search input::placeholder {
+  color: #fff;
+}
+.my_class__content_head .search__icon {
+  position: absolute;
+  top: 50%;
+  right: 13px;
+  transform: translateY(-50%);
+}
+.my_class__content_head .search__icon img.light {
+  display: none;
+}
+.my_class__content_head .select {
+  position: relative;
+}
+.my_class__content_head .select select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
+  outline: none;
+  background: transparent;
+  border: 1px solid #666666;
+  height: 45px;
+  width: 167px;
+  border-radius: 5px;
+  padding: 0 13px;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.my_class__content_head .select select option {
+  background: #232323;
+}
+.my_class__content_head .select img {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+}
+.my_class__content_head .select img.light {
+  display: none;
+}
+.my_class__content_head .btn_red {
+  padding: 14px 38px;
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: 600;
+}
+.my_class__content_body {
+  padding: 64px 101px 68px 98px;
+  gap: 35px;
+}
+.my_class__content_body li {
+  width: calc(25% - 26.25px);
+}
+.my_class__content_body li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background: linear-gradient(90deg, rgb(16, 16, 16), rgb(25, 17, 17) 100%);
+  height: 63px;
+  text-decoration: underline;
+}
+
+.add_class {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.add_class.active {
+  display: flex;
+}
+.add_class__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.add_class__content {
+  width: 570px;
+  padding: 50px 97px;
+  position: relative;
+  background: #141414;
+}
+.add_class__content_head {
+  gap: 59px;
+  margin-bottom: 24px;
+}
+.add_class__content input[type=number]::-webkit-inner-spin-button,
+.add_class__content input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.add_class__content .main_checkbox {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+.add_class__content .main_checkbox span {
+  font-size: 14px;
+}
+.add_class__content .main_checkbox input::before {
+  background: #DFDFDF;
+  color: #E92323;
+}
+.add_class__content .main_checkbox input::after {
+  color: #E92323;
+  font-weight: 900;
+}
+.add_class__content .form_control {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.add_class__content .form_control label {
+  font-size: 14px;
+}
+.add_class__content .form_control input {
+  width: 100%;
+  border: 1px solid rgb(84, 84, 84);
+  border-radius: 2px;
+  background: rgba(140, 140, 140, 0.29);
+  height: 34px;
+  padding: 0 14px;
+  color: #fff;
+}
+.add_class__content .btns {
+  gap: 24px;
+}
+.add_class__content .btns button {
+  width: 145px;
+}
+
 body.light-theme {
   background: #F7F7F7;
   color: #1E1E1E;
@@ -2319,4 +2514,75 @@ body.light-theme .teacher_office__table table td:nth-child(2) {
 }
 body.light-theme .teacher_office__table table td:first-child {
   background: #DFECFF;
+}
+body.light-theme .my_class__content {
+  background: rgba(214, 230, 255, 0.77);
+}
+body.light-theme .my_class__content_head::after {
+  background: #AEAEAE;
+  box-shadow: none;
+}
+body.light-theme .my_class__content_head .search input {
+  border: 0;
+  color: #6F6F6F;
+  background-color: white;
+}
+body.light-theme .my_class__content_head .search input::-moz-placeholder {
+  color: #6F6F6F;
+}
+body.light-theme .my_class__content_head .search input::placeholder {
+  color: #6F6F6F;
+}
+body.light-theme .my_class__content_head .search__icon img {
+  display: none;
+}
+body.light-theme .my_class__content_head .search__icon img.light {
+  display: block;
+}
+body.light-theme .my_class__content_head .select select {
+  border: 0;
+  background: #fff;
+  color: #6F6F6F;
+}
+body.light-theme .my_class__content_head .select select option {
+  background: #6F6F6F;
+  background-color: white;
+}
+body.light-theme .my_class__content_head .select img {
+  display: none;
+  z-index: 1;
+}
+body.light-theme .my_class__content_head .select img.light {
+  display: block;
+}
+body.light-theme .my_class__content_head .btn_red {
+  background: transparent !important;
+  border: 1px solid #3C7EE0;
+  color: #3C7EE0;
+}
+body.light-theme .my_class__content_body li a {
+  background: #6099EF;
+  color: #fff;
+}
+body.light-theme .add_class__content {
+  background: #D6E6FF;
+}
+body.light-theme .add_class__content .main_checkbox input::before {
+  background: #ADADAD;
+  color: #FFF;
+  border: 0;
+}
+body.light-theme .add_class__content .main_checkbox input::after {
+  color: #FFF;
+}
+body.light-theme .add_class__content .form_control input {
+  border: 0;
+  background: #FFF;
+  color: #2A2A2A;
+}
+body.light-theme .add_class__content .btns button {
+  background: transparent;
+  border: 1px solid #3C7EE0;
+  color: #3C7EE0;
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */

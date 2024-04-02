@@ -349,6 +349,12 @@ body {
             max-width: calc(100vw - 200px);
         }
     }
+
+    &__my_class {
+        .main_container {
+            max-width: 1365px;
+        }
+    }
 }
 // Header  end
 
@@ -2082,5 +2088,230 @@ body {
     }
 }
 // Teacher office end
+
+// My class
+.my_class {
+    padding: 172px 0 66px;
+    min-height: 100vh;
+
+    .main_container {
+        max-width: 1365px;
+    }
+
+    &__content {
+        background: rgba(35, 35, 35, 0.66);
+        border-radius: 5px;
+
+        &_head {
+            padding: 36px 98px;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background: #2A2828;
+                box-shadow: 0 4px 3px #0B0B0B;
+            }
+
+            .my_class__form {
+                gap: 36px;
+            }
+
+            .search {
+                position: relative;
+
+                input {
+                    border: 1px solid #666666;
+                    color: #FFFFFF;
+                    font-size: 14px;
+                    font-weight: 600;
+                    width: 255px;
+                    border-radius: 5px;
+                    padding: 13px 50px 13px 20px;
+
+                    &::placeholder {
+                        color: #fff;
+                    }
+                }
+                
+                &__icon {
+                    position: absolute;
+                    top: 50%;
+                    right: 13px;
+                    transform: translateY(-50%);
+
+                    img.light {
+                        display: none;
+                    }
+                }
+            }
+
+            .select {
+                position: relative;
+
+                select {
+                    appearance: none;
+                    position: relative;
+                    outline: none;
+                    background: transparent;
+                    border: 1px solid #666666;
+                    height: 45px;
+                    width: 167px;
+                    border-radius: 5px;
+                    padding: 0 13px;
+                    color: #FFF;
+                    font-size: 14px;
+                    font-weight: 600;
+                    cursor: pointer;
+    
+                    option {
+                        background: #232323;
+                    }
+                }
+
+
+                img {
+                    position: absolute;
+                    top: 50%;
+                    right: 8px;
+                    transform: translateY(-50%);
+
+                    &.light {
+                        display: none;
+                    }
+                }
+            }
+
+            .btn_red {
+                padding: 14px 38px;
+                text-decoration: underline;
+                font-size: 14px;
+                font-weight: 600;
+            }
+        }
+
+        &_body {
+            padding: 64px 101px 68px 98px;
+            gap: 35px;
+
+            li {
+                width: calc(25% - 35px * 3 / 4);
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 5px;
+                    background: linear-gradient(90.00deg, rgb(16, 16, 16),rgb(25, 17, 17) 100%);
+                    height: 63px;
+                    text-decoration: underline
+                }
+            }
+        }
+    }
+}
+// My class end
+
+// Add class modal 
+.add_class {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    &.active {
+        display: flex;
+    }
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5)
+    }
+
+    &__content {
+        width: 570px;
+        padding: 50px 97px;
+        position: relative;
+        background: #141414;
+
+        &_head {
+            gap: 59px;
+            margin-bottom: 24px;
+        }
+
+        input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button { 
+            -webkit-appearance: none; 
+            margin: 0; 
+        }
+
+        .main_checkbox {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            user-select: none;
+            cursor: pointer;
+
+            span {
+                font-size: 14px;
+            }
+
+            input {
+                &::before {
+                    background: #DFDFDF;
+                    color: #E92323;
+                }
+
+                &::after {
+                    color: #E92323;
+                    font-weight: 900;
+                }
+            }
+        }
+
+        .form_control {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 20px;
+
+            label {
+                font-size: 14px;
+            }
+
+            input {
+                width: 100%;
+                border: 1px solid rgb(84, 84, 84);
+                border-radius: 2px;
+                background: rgba(140, 140, 140, 0.29);
+                height: 34px;
+                padding: 0 14px;
+                color: #fff;
+            }
+        }
+
+        .btns {
+            gap: 24px;
+
+            button {
+                width: 145px;
+            }
+        }
+    }
+}
+// Add class modal end
 
 @import './light-theme';

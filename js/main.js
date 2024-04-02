@@ -139,4 +139,12 @@ $(document).ready(function () {
             $('.less_list').slideUp(300);
         }
     )
+
+    $('.add_class__open').click(function () {
+        $('.add_class').addClass('active')
+    })
+
+    $('.add_class__close').click(function () {
+        $('.add_class').removeClass('active')
+    })
 })
